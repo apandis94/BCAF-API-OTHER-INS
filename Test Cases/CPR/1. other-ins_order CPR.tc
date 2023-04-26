@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>1. other-ins_order CPR</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>d141ed50-7de8-423e-bbd2-0230a8c638ee</testCaseGuid>
+   <variable>
+      <defaultValue>'CPR'</defaultValue>
+      <description></description>
+      <id>dd90f540-fad8-4ab4-bb32-f569c60d3c5b</id>
+      <masked>false</masked>
+      <name>id</name>
+   </variable>
+   <variable>
+      <defaultValue>'2022-07-07'</defaultValue>
+      <description></description>
+      <id>05e07fe4-6ad8-4c37-ac6d-6fc1d3d1d900</id>
+      <masked>false</masked>
+      <name>order_date</name>
+   </variable>
+   <variable>
+      <defaultValue>'PGI'</defaultValue>
+      <description></description>
+      <id>205d0f81-ff50-44b7-8776-a8cc41e39f82</id>
+      <masked>false</masked>
+      <name>source</name>
+   </variable>
+</TestCaseEntity>

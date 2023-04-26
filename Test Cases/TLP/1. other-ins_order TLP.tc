@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>1. other-ins_order TLP</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>f6a46a80-cd31-4c9d-bd84-eb39b9a837e3</testCaseGuid>
+   <variable>
+      <defaultValue>'UTK11Sejg49Y8q1YUFk4yqVUSWGB'</defaultValue>
+      <description></description>
+      <id>ba78ac35-2b31-4f89-b8a7-9b8b75ab8a58</id>
+      <masked>false</masked>
+      <name>token</name>
+   </variable>
+   <variable>
+      <defaultValue>'TLP'</defaultValue>
+      <description></description>
+      <id>6890915b-fb68-470e-92fe-1df30cbf12b2</id>
+      <masked>false</masked>
+      <name>id</name>
+   </variable>
+   <variable>
+      <defaultValue>'2022-07-15'</defaultValue>
+      <description></description>
+      <id>2252e035-4d6b-4e87-975a-743045c54e39</id>
+      <masked>false</masked>
+      <name>orderdate</name>
+   </variable>
+   <variable>
+      <defaultValue>'TLP'</defaultValue>
+      <description></description>
+      <id>863b7be6-5587-42ca-a415-ad35d5f4f466</id>
+      <masked>false</masked>
+      <name>source</name>
+   </variable>
+   <variable>
+      <defaultValue>'TLP'</defaultValue>
+      <description></description>
+      <id>7a8d6b82-7290-4454-b7fd-41f28d4886ff</id>
+      <masked>false</masked>
+      <name>maskapai_id</name>
+   </variable>
+</TestCaseEntity>

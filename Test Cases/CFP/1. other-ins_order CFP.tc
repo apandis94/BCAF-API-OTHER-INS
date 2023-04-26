@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>1. other-ins_order CFP</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>0c2283f5-4eef-4a0d-92d7-6178950b70d5</testCaseGuid>
+   <variable>
+      <defaultValue>'9430710308001'</defaultValue>
+      <description></description>
+      <id>ce5b33fe-e0be-4ea7-bc14-8c0062ac9a21</id>
+      <masked>false</masked>
+      <name>nokontrak</name>
+   </variable>
+   <variable>
+      <defaultValue>'YNNO DANRDYDO'</defaultValue>
+      <description></description>
+      <id>5d724396-8eaa-462c-af8c-47144746e955</id>
+      <masked>false</masked>
+      <name>custname</name>
+   </variable>
+   <variable>
+      <defaultValue>'0811145284'</defaultValue>
+      <description></description>
+      <id>f08e48df-bdfb-4c0c-9ae3-807cca3ae401</id>
+      <masked>false</masked>
+      <name>hpnumber</name>
+   </variable>
+   <variable>
+      <defaultValue>'X 4459 IOP'</defaultValue>
+      <description></description>
+      <id>7d59dded-1acf-40d6-80c5-77e4cdd63741</id>
+      <masked>false</masked>
+      <name>nopol</name>
+   </variable>
+   <variable>
+      <defaultValue>'234JIIOE'</defaultValue>
+      <description></description>
+      <id>80a91669-164a-4f57-a1f9-b91ce23cb4a2</id>
+      <masked>false</masked>
+      <name>norangka</name>
+   </variable>
+   <variable>
+      <defaultValue>'U10O   AN0OL  RT1N  N2L1TKE, TELUKAN, GROGOL, SUKOHARJO, JAWA TENGAH, 57552\''</defaultValue>
+      <description></description>
+      <id>6e6c1f34-b75c-41c5-9d93-8a30ce661c7a</id>
+      <masked>false</masked>
+      <name>addrs</name>
+   </variable>
+   <variable>
+      <defaultValue>'3171051205770001'</defaultValue>
+      <description></description>
+      <id>417617be-48d4-454c-8c15-447ed2c0b53e</id>
+      <masked>false</masked>
+      <name>nik</name>
+   </variable>
+   <variable>
+      <defaultValue>'1'</defaultValue>
+      <description></description>
+      <id>b35cdc18-fdb7-4971-932c-7b0d657450e8</id>
+      <masked>false</masked>
+      <name>npwp</name>
+   </variable>
+   <variable>
+      <defaultValue>'1'</defaultValue>
+      <description></description>
+      <id>c1dc810e-832f-4bd0-87a1-161d4fe33830</id>
+      <masked>false</masked>
+      <name>no</name>
+   </variable>
+</TestCaseEntity>

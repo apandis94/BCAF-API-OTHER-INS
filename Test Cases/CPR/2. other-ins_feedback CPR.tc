@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>2. other-ins_feedback CPR</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>2f3c303d-eef7-496d-be48-cae6b7d1b64d</testCaseGuid>
+   <variable>
+      <defaultValue>'CPR'</defaultValue>
+      <description></description>
+      <id>590a01ba-72be-4460-8146-dc87d0979673</id>
+      <masked>false</masked>
+      <name>jenis</name>
+   </variable>
+   <variable>
+      <defaultValue>'CPR'</defaultValue>
+      <description></description>
+      <id>b3fd9116-eff8-4940-a6a1-f25c4962f246</id>
+      <masked>false</masked>
+      <name>id</name>
+   </variable>
+   <variable>
+      <defaultValue>'2021-12-31'</defaultValue>
+      <description></description>
+      <id>d8308243-6fc5-4f0a-90ce-86efd67bc5a1</id>
+      <masked>false</masked>
+      <name>order_date</name>
+   </variable>
+   <variable>
+      <defaultValue>'PGI'</defaultValue>
+      <description></description>
+      <id>199aa334-a096-4ecc-917b-3acd186ad870</id>
+      <masked>false</masked>
+      <name>source</name>
+   </variable>
+   <variable>
+      <defaultValue>'1161008171001'</defaultValue>
+      <description></description>
+      <id>fcc06f87-4a65-4302-8439-23b9f0ee3814</id>
+      <masked>false</masked>
+      <name>accno</name>
+   </variable>
+   <variable>
+      <defaultValue>'NoPolis-20211231-1'</defaultValue>
+      <description></description>
+      <id>d175719c-0a62-49f8-883c-8d79f0ec7e26</id>
+      <masked>false</masked>
+      <name>nopolis</name>
+   </variable>
+   <variable>
+      <defaultValue>'1'</defaultValue>
+      <description></description>
+      <id>c9fc03bb-f44c-49dc-8213-2a93857a75ca</id>
+      <masked>false</masked>
+      <name>no</name>
+   </variable>
+</TestCaseEntity>
