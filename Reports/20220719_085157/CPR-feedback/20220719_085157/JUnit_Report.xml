@@ -1,0 +1,364 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="CPR-feedback" time="8.716" tests="2" failures="2" errors="0">
+   <testsuite name="CPR-feedback" tests="2" failures="2" errors="0" time="8.716" skipped="0" timestamp="2022-07-19 08:52:21" hostname="User - DESKTOP-7I3I0GG" id="Test Suites/CPR-feedback">
+      <properties>
+         <property name="deviceName" value=""/>
+         <property name="devicePlatform" value=""/>
+         <property name="logFolder" value="C:\\Users\\User\\Katalon Studio\\other-ins\\Reports\\20220719_085157\\CPR-feedback\\20220719_085157"/>
+         <property name="logFiles" value="C:\\Users\\User\\Katalon Studio\\other-ins\\Reports\\20220719_085157\\CPR-feedback\\20220719_085157\\execution0.log"/>
+         <property name="attachments" value=""/>
+         <property name="hostName" value="User - DESKTOP-7I3I0GG"/>
+         <property name="hostAddress" value="192.168.250.7"/>
+         <property name="os" value="Windows 10 64bit"/>
+         <property name="katalonVersion" value="8.1.0.208"/>
+      </properties>
+      <testcase name="Test Cases/CPR/2. other-ins_feedback CPR" time="4.207" classname="Test Cases/CPR/2. other-ins_feedback CPR" status="FAILED">
+         <failure type="FAILED" message="Test Cases/CPR/2. other-ins_feedback CPR FAILED.
+Reason:
+com.kms.katalon.core.exception.StepFailedException: Expected element property value '000' is not equal with actual property value '02'
+	at com.kms.katalon.core.keyword.internal.KeywordMain.stepFailed(KeywordMain.groovy:39)
+	at com.kms.katalon.core.webservice.keyword.builtin.VerifyElementPropertyValueKeyword$_verifyElementPropertyValue_closure1.doCall(VerifyElementPropertyValueKeyword.groovy:56)
+	at com.kms.katalon.core.webservice.keyword.builtin.VerifyElementPropertyValueKeyword$_verifyElementPropertyValue_closure1.call(VerifyElementPropertyValueKeyword.groovy)
+	at com.kms.katalon.core.keyword.internal.KeywordMain.runKeyword(KeywordMain.groovy:74)
+	at com.kms.katalon.core.webservice.keyword.builtin.VerifyElementPropertyValueKeyword.verifyElementPropertyValue(VerifyElementPropertyValueKeyword.groovy:48)
+	at com.kms.katalon.core.webservice.keyword.builtin.VerifyElementPropertyValueKeyword.execute(VerifyElementPropertyValueKeyword.groovy:43)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:74)
+	at com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords.verifyElementPropertyValue(WSBuiltInKeywords.groovy:175)
+	at com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords$verifyElementPropertyValue$0.call(Unknown Source)
+	at 2. other-ins_feedback CPR.run(2. other-ins_feedback CPR:44)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:430)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:421)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:400)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:392)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:273)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:202)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:164)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:105)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:185)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1658195517118.run(TempTestSuite1658195517118.groovy:36)
+"/>
+         <system-out><![CDATA[2022-07-19 08:52:22 - [TEST_CASE][FAILED] - Test Cases/CPR/2. other-ins_feedback CPR: Test Cases/CPR/2. other-ins_feedback CPR FAILED.
+Reason:
+com.kms.katalon.core.exception.StepFailedException: Expected element property value '000' is not equal with actual property value '02'
+	at com.kms.katalon.core.keyword.internal.KeywordMain.stepFailed(KeywordMain.groovy:39)
+	at com.kms.katalon.core.webservice.keyword.builtin.VerifyElementPropertyValueKeyword$_verifyElementPropertyValue_closure1.doCall(VerifyElementPropertyValueKeyword.groovy:56)
+	at com.kms.katalon.core.webservice.keyword.builtin.VerifyElementPropertyValueKeyword$_verifyElementPropertyValue_closure1.call(VerifyElementPropertyValueKeyword.groovy)
+	at com.kms.katalon.core.keyword.internal.KeywordMain.runKeyword(KeywordMain.groovy:74)
+	at com.kms.katalon.core.webservice.keyword.builtin.VerifyElementPropertyValueKeyword.verifyElementPropertyValue(VerifyElementPropertyValueKeyword.groovy:48)
+	at com.kms.katalon.core.webservice.keyword.builtin.VerifyElementPropertyValueKeyword.execute(VerifyElementPropertyValueKeyword.groovy:43)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:74)
+	at com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords.verifyElementPropertyValue(WSBuiltInKeywords.groovy:175)
+	at com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords$verifyElementPropertyValue$0.call(Unknown Source)
+	at 2. other-ins_feedback CPR.run(2. other-ins_feedback CPR:44)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:430)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:421)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:400)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:392)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:273)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:202)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:164)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:105)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:185)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1658195517118.run(TempTestSuite1658195517118.groovy:36)
+
+
+2022-07-19 08:52:23 - [TEST_STEP][PASSED] - token = sendRequest(findTestObject("CPR/get_credential_CPR")): Send request successfully
+
+2022-07-19 08:52:25 - [MESSAGE][INFO] - HAR: C:\Users\User\Katalon Studio\other-ins\Reports\20220719_085157\CPR-feedback\20220719_085157\requests\main\0.har
+
+2022-07-19 08:52:25 - [MESSAGE][PASSED] - Send request successfully
+
+2022-07-19 08:52:25 - [TEST_STEP][PASSED] - slurper = new groovy.json.JsonSlurper(): null
+
+2022-07-19 08:52:25 - [TEST_STEP][PASSED] - get_token = slurper.parseText(token.getResponseBodyContent()): null
+
+2022-07-19 08:52:25 - [TEST_STEP][PASSED] - private_token = access_token: null
+
+2022-07-19 08:52:25 - [TEST_STEP][PASSED] - g_token = private_token: null
+
+2022-07-19 08:52:26 - [TEST_STEP][PASSED] - println("token is :" + g_token): null
+
+2022-07-19 08:52:26 - [TEST_STEP][PASSED] - response_token = token.getResponseText(): null
+
+2022-07-19 08:52:26 - [TEST_STEP][PASSED] - logInfo($response_token): 
+            {
+                "token_type": "BearerToken",
+                "access_token": "gl7nu896RIAZqEVJyVeqY0XdIGyX",
+                "expires_in": "1799",
+                "scope": ""
+            }
+        
+
+2022-07-19 08:52:26 - [MESSAGE][INFO] - 
+            {
+                "token_type": "BearerToken",
+                "access_token": "gl7nu896RIAZqEVJyVeqY0XdIGyX",
+                "expires_in": "1799",
+                "scope": ""
+            }
+        
+
+2022-07-19 08:52:26 - [TEST_STEP][PASSED] - feedback = sendRequest(findTestObject("CPR/other-ins-feedback_CPR", ["token":private_token, "id":id, "order_date":order_date, "source":source, "accno":accno, "nopolis":nopolis])): Send request successfully
+
+2022-07-19 08:52:26 - [MESSAGE][INFO] - HAR: C:\Users\User\Katalon Studio\other-ins\Reports\20220719_085157\CPR-feedback\20220719_085157\requests\main\1.har
+
+2022-07-19 08:52:26 - [MESSAGE][PASSED] - Send request successfully
+
+2022-07-19 08:52:26 - [TEST_STEP][FAILED] - verifyElementPropertyValue(feedback, "FeedbackOrderInsCarWarrantyRs.StatusCode", "000", CONTINUE_ON_FAILURE): Expected element property value '000' is not equal with actual property value '02'
+
+2022-07-19 08:52:26 - [MESSAGE][FAILED] - Expected element property value '000' is not equal with actual property value '02'
+
+2022-07-19 08:52:26 - [TEST_STEP][PASSED] - result_feedback = feedback.getResponseText(): null
+
+2022-07-19 08:52:26 - [TEST_STEP][PASSED] - markPassed("order date " + order_date + " data ke : " + no): order date 2022-07-10 data ke : 1
+
+2022-07-19 08:52:26 - [MESSAGE][PASSED] - order date 2022-07-10 data ke : 1
+
+2022-07-19 08:52:26 - [TEST_STEP][PASSED] - logInfo($result_feedback): {
+  "FeedbackOrderInsCarWarrantyRs" : {
+    "StatusCode" : "02",
+    "StatusMessage" : "Data belum di Order"
+  }
+}
+
+2022-07-19 08:52:26 - [MESSAGE][INFO] - {
+  "FeedbackOrderInsCarWarrantyRs" : {
+    "StatusCode" : "02",
+    "StatusMessage" : "Data belum di Order"
+  }
+}]]></system-out>
+         <system-err><![CDATA[2022-07-19 08:52:22 - [TEST_CASE][FAILED] - Test Cases/CPR/2. other-ins_feedback CPR: Test Cases/CPR/2. other-ins_feedback CPR FAILED.
+Reason:
+com.kms.katalon.core.exception.StepFailedException: Expected element property value '000' is not equal with actual property value '02'
+	at com.kms.katalon.core.keyword.internal.KeywordMain.stepFailed(KeywordMain.groovy:39)
+	at com.kms.katalon.core.webservice.keyword.builtin.VerifyElementPropertyValueKeyword$_verifyElementPropertyValue_closure1.doCall(VerifyElementPropertyValueKeyword.groovy:56)
+	at com.kms.katalon.core.webservice.keyword.builtin.VerifyElementPropertyValueKeyword$_verifyElementPropertyValue_closure1.call(VerifyElementPropertyValueKeyword.groovy)
+	at com.kms.katalon.core.keyword.internal.KeywordMain.runKeyword(KeywordMain.groovy:74)
+	at com.kms.katalon.core.webservice.keyword.builtin.VerifyElementPropertyValueKeyword.verifyElementPropertyValue(VerifyElementPropertyValueKeyword.groovy:48)
+	at com.kms.katalon.core.webservice.keyword.builtin.VerifyElementPropertyValueKeyword.execute(VerifyElementPropertyValueKeyword.groovy:43)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:74)
+	at com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords.verifyElementPropertyValue(WSBuiltInKeywords.groovy:175)
+	at com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords$verifyElementPropertyValue$0.call(Unknown Source)
+	at 2. other-ins_feedback CPR.run(2. other-ins_feedback CPR:44)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:430)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:421)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:400)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:392)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:273)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:202)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:164)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:105)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:185)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1658195517118.run(TempTestSuite1658195517118.groovy:36)]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/CPR/2. other-ins_feedback CPR" time="2.622" classname="Test Cases/CPR/2. other-ins_feedback CPR" status="FAILED">
+         <failure type="FAILED" message="Test Cases/CPR/2. other-ins_feedback CPR FAILED.
+Reason:
+com.kms.katalon.core.exception.StepFailedException: Expected element property value '000' is not equal with actual property value '02'
+	at com.kms.katalon.core.keyword.internal.KeywordMain.stepFailed(KeywordMain.groovy:39)
+	at com.kms.katalon.core.webservice.keyword.builtin.VerifyElementPropertyValueKeyword$_verifyElementPropertyValue_closure1.doCall(VerifyElementPropertyValueKeyword.groovy:56)
+	at com.kms.katalon.core.webservice.keyword.builtin.VerifyElementPropertyValueKeyword$_verifyElementPropertyValue_closure1.call(VerifyElementPropertyValueKeyword.groovy)
+	at com.kms.katalon.core.keyword.internal.KeywordMain.runKeyword(KeywordMain.groovy:74)
+	at com.kms.katalon.core.webservice.keyword.builtin.VerifyElementPropertyValueKeyword.verifyElementPropertyValue(VerifyElementPropertyValueKeyword.groovy:48)
+	at com.kms.katalon.core.webservice.keyword.builtin.VerifyElementPropertyValueKeyword.execute(VerifyElementPropertyValueKeyword.groovy:43)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:74)
+	at com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords.verifyElementPropertyValue(WSBuiltInKeywords.groovy:175)
+	at com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords$verifyElementPropertyValue$0.call(Unknown Source)
+	at 2. other-ins_feedback CPR.run(2. other-ins_feedback CPR:44)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:430)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:421)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:400)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:392)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:273)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:202)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:164)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:105)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:185)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1658195517118.run(TempTestSuite1658195517118.groovy:36)
+"/>
+         <system-out><![CDATA[2022-07-19 08:52:27 - [TEST_CASE][FAILED] - Test Cases/CPR/2. other-ins_feedback CPR: Test Cases/CPR/2. other-ins_feedback CPR FAILED.
+Reason:
+com.kms.katalon.core.exception.StepFailedException: Expected element property value '000' is not equal with actual property value '02'
+	at com.kms.katalon.core.keyword.internal.KeywordMain.stepFailed(KeywordMain.groovy:39)
+	at com.kms.katalon.core.webservice.keyword.builtin.VerifyElementPropertyValueKeyword$_verifyElementPropertyValue_closure1.doCall(VerifyElementPropertyValueKeyword.groovy:56)
+	at com.kms.katalon.core.webservice.keyword.builtin.VerifyElementPropertyValueKeyword$_verifyElementPropertyValue_closure1.call(VerifyElementPropertyValueKeyword.groovy)
+	at com.kms.katalon.core.keyword.internal.KeywordMain.runKeyword(KeywordMain.groovy:74)
+	at com.kms.katalon.core.webservice.keyword.builtin.VerifyElementPropertyValueKeyword.verifyElementPropertyValue(VerifyElementPropertyValueKeyword.groovy:48)
+	at com.kms.katalon.core.webservice.keyword.builtin.VerifyElementPropertyValueKeyword.execute(VerifyElementPropertyValueKeyword.groovy:43)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:74)
+	at com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords.verifyElementPropertyValue(WSBuiltInKeywords.groovy:175)
+	at com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords$verifyElementPropertyValue$0.call(Unknown Source)
+	at 2. other-ins_feedback CPR.run(2. other-ins_feedback CPR:44)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:430)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:421)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:400)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:392)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:273)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:202)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:164)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:105)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:185)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1658195517118.run(TempTestSuite1658195517118.groovy:36)
+
+
+2022-07-19 08:52:27 - [TEST_STEP][PASSED] - token = sendRequest(findTestObject("CPR/get_credential_CPR")): Send request successfully
+
+2022-07-19 08:52:27 - [MESSAGE][INFO] - HAR: C:\Users\User\Katalon Studio\other-ins\Reports\20220719_085157\CPR-feedback\20220719_085157\requests\main\2.har
+
+2022-07-19 08:52:27 - [MESSAGE][PASSED] - Send request successfully
+
+2022-07-19 08:52:27 - [TEST_STEP][PASSED] - slurper = new groovy.json.JsonSlurper(): null
+
+2022-07-19 08:52:27 - [TEST_STEP][PASSED] - get_token = slurper.parseText(token.getResponseBodyContent()): null
+
+2022-07-19 08:52:27 - [TEST_STEP][PASSED] - private_token = access_token: null
+
+2022-07-19 08:52:27 - [TEST_STEP][PASSED] - g_token = private_token: null
+
+2022-07-19 08:52:27 - [TEST_STEP][PASSED] - println("token is :" + g_token): null
+
+2022-07-19 08:52:27 - [TEST_STEP][PASSED] - response_token = token.getResponseText(): null
+
+2022-07-19 08:52:27 - [TEST_STEP][PASSED] - logInfo($response_token): 
+            {
+                "token_type": "BearerToken",
+                "access_token": "dG1JI1g0AcS2eUxkQ2G5XR84dPGA",
+                "expires_in": "1799",
+                "scope": ""
+            }
+        
+
+2022-07-19 08:52:27 - [MESSAGE][INFO] - 
+            {
+                "token_type": "BearerToken",
+                "access_token": "dG1JI1g0AcS2eUxkQ2G5XR84dPGA",
+                "expires_in": "1799",
+                "scope": ""
+            }
+        
+
+2022-07-19 08:52:27 - [TEST_STEP][PASSED] - feedback = sendRequest(findTestObject("CPR/other-ins-feedback_CPR", ["token":private_token, "id":id, "order_date":order_date, "source":source, "accno":accno, "nopolis":nopolis])): Send request successfully
+
+2022-07-19 08:52:29 - [MESSAGE][INFO] - HAR: C:\Users\User\Katalon Studio\other-ins\Reports\20220719_085157\CPR-feedback\20220719_085157\requests\main\3.har
+
+2022-07-19 08:52:29 - [MESSAGE][PASSED] - Send request successfully
+
+2022-07-19 08:52:29 - [TEST_STEP][FAILED] - verifyElementPropertyValue(feedback, "FeedbackOrderInsCarWarrantyRs.StatusCode", "000", CONTINUE_ON_FAILURE): Expected element property value '000' is not equal with actual property value '02'
+
+2022-07-19 08:52:29 - [MESSAGE][FAILED] - Expected element property value '000' is not equal with actual property value '02'
+
+2022-07-19 08:52:29 - [TEST_STEP][PASSED] - result_feedback = feedback.getResponseText(): null
+
+2022-07-19 08:52:29 - [TEST_STEP][PASSED] - markPassed("order date " + order_date + " data ke : " + no): order date 2022-07-10 data ke : 2
+
+2022-07-19 08:52:29 - [MESSAGE][PASSED] - order date 2022-07-10 data ke : 2
+
+2022-07-19 08:52:29 - [TEST_STEP][PASSED] - logInfo($result_feedback): {
+  "FeedbackOrderInsCarWarrantyRs" : {
+    "StatusCode" : "02",
+    "StatusMessage" : "Data belum di Order"
+  }
+}
+
+2022-07-19 08:52:29 - [MESSAGE][INFO] - {
+  "FeedbackOrderInsCarWarrantyRs" : {
+    "StatusCode" : "02",
+    "StatusMessage" : "Data belum di Order"
+  }
+}]]></system-out>
+         <system-err><![CDATA[2022-07-19 08:52:27 - [TEST_CASE][FAILED] - Test Cases/CPR/2. other-ins_feedback CPR: Test Cases/CPR/2. other-ins_feedback CPR FAILED.
+Reason:
+com.kms.katalon.core.exception.StepFailedException: Expected element property value '000' is not equal with actual property value '02'
+	at com.kms.katalon.core.keyword.internal.KeywordMain.stepFailed(KeywordMain.groovy:39)
+	at com.kms.katalon.core.webservice.keyword.builtin.VerifyElementPropertyValueKeyword$_verifyElementPropertyValue_closure1.doCall(VerifyElementPropertyValueKeyword.groovy:56)
+	at com.kms.katalon.core.webservice.keyword.builtin.VerifyElementPropertyValueKeyword$_verifyElementPropertyValue_closure1.call(VerifyElementPropertyValueKeyword.groovy)
+	at com.kms.katalon.core.keyword.internal.KeywordMain.runKeyword(KeywordMain.groovy:74)
+	at com.kms.katalon.core.webservice.keyword.builtin.VerifyElementPropertyValueKeyword.verifyElementPropertyValue(VerifyElementPropertyValueKeyword.groovy:48)
+	at com.kms.katalon.core.webservice.keyword.builtin.VerifyElementPropertyValueKeyword.execute(VerifyElementPropertyValueKeyword.groovy:43)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:74)
+	at com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords.verifyElementPropertyValue(WSBuiltInKeywords.groovy:175)
+	at com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords$verifyElementPropertyValue$0.call(Unknown Source)
+	at 2. other-ins_feedback CPR.run(2. other-ins_feedback CPR:44)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:430)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:421)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:400)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:392)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:273)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:202)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:164)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:105)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:185)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1658195517118.run(TempTestSuite1658195517118.groovy:36)]]></system-err>
+      </testcase>
+      <system-out><![CDATA[2022-07-19 08:52:21 - [TEST_SUITE][FAILED] - CPR-feedback: Test Cases/CPR/2. other-ins_feedback CPR FAILED.
+Reason:
+com.kms.katalon.core.exception.StepFailedException: Expected element property value '000' is not equal with actual property value '02'
+	at com.kms.katalon.core.keyword.internal.KeywordMain.stepFailed(KeywordMain.groovy:39)
+	at com.kms.katalon.core.webservice.keyword.builtin.VerifyElementPropertyValueKeyword$_verifyElementPropertyValue_closure1.doCall(VerifyElementPropertyValueKeyword.groovy:56)
+	at com.kms.katalon.core.webservice.keyword.builtin.VerifyElementPropertyValueKeyword$_verifyElementPropertyValue_closure1.call(VerifyElementPropertyValueKeyword.groovy)
+	at com.kms.katalon.core.keyword.internal.KeywordMain.runKeyword(KeywordMain.groovy:74)
+	at com.kms.katalon.core.webservice.keyword.builtin.VerifyElementPropertyValueKeyword.verifyElementPropertyValue(VerifyElementPropertyValueKeyword.groovy:48)
+	at com.kms.katalon.core.webservice.keyword.builtin.VerifyElementPropertyValueKeyword.execute(VerifyElementPropertyValueKeyword.groovy:43)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:74)
+	at com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords.verifyElementPropertyValue(WSBuiltInKeywords.groovy:175)
+	at com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords$verifyElementPropertyValue$0.call(Unknown Source)
+	at 2. other-ins_feedback CPR.run(2. other-ins_feedback CPR:44)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:430)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:421)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:400)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:392)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:273)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:202)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:164)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:105)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:185)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1658195517118.run(TempTestSuite1658195517118.groovy:36)]]></system-out>
+      <system-err><![CDATA[2022-07-19 08:52:21 - [TEST_SUITE][FAILED] - CPR-feedback: Test Cases/CPR/2. other-ins_feedback CPR FAILED.
+Reason:
+com.kms.katalon.core.exception.StepFailedException: Expected element property value '000' is not equal with actual property value '02'
+	at com.kms.katalon.core.keyword.internal.KeywordMain.stepFailed(KeywordMain.groovy:39)
+	at com.kms.katalon.core.webservice.keyword.builtin.VerifyElementPropertyValueKeyword$_verifyElementPropertyValue_closure1.doCall(VerifyElementPropertyValueKeyword.groovy:56)
+	at com.kms.katalon.core.webservice.keyword.builtin.VerifyElementPropertyValueKeyword$_verifyElementPropertyValue_closure1.call(VerifyElementPropertyValueKeyword.groovy)
+	at com.kms.katalon.core.keyword.internal.KeywordMain.runKeyword(KeywordMain.groovy:74)
+	at com.kms.katalon.core.webservice.keyword.builtin.VerifyElementPropertyValueKeyword.verifyElementPropertyValue(VerifyElementPropertyValueKeyword.groovy:48)
+	at com.kms.katalon.core.webservice.keyword.builtin.VerifyElementPropertyValueKeyword.execute(VerifyElementPropertyValueKeyword.groovy:43)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:74)
+	at com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords.verifyElementPropertyValue(WSBuiltInKeywords.groovy:175)
+	at com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords$verifyElementPropertyValue$0.call(Unknown Source)
+	at 2. other-ins_feedback CPR.run(2. other-ins_feedback CPR:44)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:430)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:421)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:400)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:392)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:273)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:202)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:164)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:105)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:185)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1658195517118.run(TempTestSuite1658195517118.groovy:36)]]></system-err>
+   </testsuite>
+</testsuites>

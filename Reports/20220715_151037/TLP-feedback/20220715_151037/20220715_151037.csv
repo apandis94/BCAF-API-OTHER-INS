@@ -1,0 +1,17 @@
+Suite/Test/Step Name,Browser,Description,Tag,Start time,End time,Duration,Status
+TLP-feedback,,,,2022-07-15 15:11:14,2022-07-15 15:11:19,4.254s,PASSED
+,,,,,,,
+Test Cases/TLP/2. other-ins_feedback TLP,,,,2022-07-15 15:11:15,2022-07-15 15:11:19,3.645s,PASSED
+"token = sendRequest(findTestObject(""TLP/get_credential TLP""))",,,,2022-07-15 15:11:16,2022-07-15 15:11:18,1.881s,PASSED
+slurper = new groovy.json.JsonSlurper(),,store json response to variable,,2022-07-15 15:11:18,2022-07-15 15:11:18,0.015s,PASSED
+get_token = slurper.parseText(token.getResponseBodyContent()),,,,2022-07-15 15:11:18,2022-07-15 15:11:18,0.027s,PASSED
+private_token = access_token,,define / field api,,2022-07-15 15:11:18,2022-07-15 15:11:18,0.009s,PASSED
+g_token = private_token,,store var to global variable,,2022-07-15 15:11:18,2022-07-15 15:11:18,0.104s,PASSED
+"println(""token is :"" + g_token)",,,,2022-07-15 15:11:18,2022-07-15 15:11:18,0.004s,PASSED
+response_token = token.getResponseText(),,show response to report in test suite,,2022-07-15 15:11:18,2022-07-15 15:11:18,0.001s,PASSED
+logInfo($response_token),,,,2022-07-15 15:11:18,2022-07-15 15:11:18,0.042s,PASSED
+"feedback = sendRequest(findTestObject(""TLP/OtherInsFeedbackTLP"", [""token"":private_token, ""id"":id, ""maskapai_id"":maskapai_id, ""source"":source, ""orderdate"":orderdate, ""no_reff"":accno, ""no_polis"":no_polis]))",,,,2022-07-15 15:11:18,2022-07-15 15:11:19,0.733s,PASSED
+"verifyElementPropertyValue(feedback, ""SubmitPolisAsuransiTLCResponse.StatusCode"", ""00"", CONTINUE_ON_FAILURE)",,,,2022-07-15 15:11:19,2022-07-15 15:11:19,0.088s,PASSED
+result_feedback = feedback.getResponseText(),,show response to report in test suite,,2022-07-15 15:11:19,2022-07-15 15:11:19,0.000s,PASSED
+"markPassed(""order date "" + orderdate + "" data ke : "" + no)",,,,2022-07-15 15:11:19,2022-07-15 15:11:19,0.008s,PASSED
+logInfo($result_feedback),,,,2022-07-15 15:11:19,2022-07-15 15:11:19,0.001s,PASSED

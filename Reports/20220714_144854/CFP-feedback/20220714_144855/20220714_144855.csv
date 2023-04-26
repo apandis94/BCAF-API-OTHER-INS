@@ -1,0 +1,8 @@
+Suite/Test/Step Name,Browser,Description,Tag,Start time,End time,Duration,Status
+CFP-feedback,,,,2022-07-14 14:49:04,2022-07-14 14:49:21,17.133s,FAILED
+,,,,,,,
+Test Cases/CFP/2. other-ins_feedback CFP,,,,2022-07-14 14:49:05,2022-07-14 14:49:20,15.753s,FAILED
+"token = sendRequest(findTestObject(""CFP/credential CFP""))",,,,2022-07-14 14:49:07,2022-07-14 14:49:20,13.902s,FAILED
+,,,,,,,
+Test Cases/CFP/2. other-ins_feedback CFP,,,,2022-07-14 14:49:21,2022-07-14 14:49:21,0.186s,FAILED
+"token = sendRequest(findTestObject(""CFP/credential CFP""))",,,,2022-07-14 14:49:21,2022-07-14 14:49:21,0.132s,FAILED

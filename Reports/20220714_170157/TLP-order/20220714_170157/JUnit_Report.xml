@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="TLP-order" time="18.457" tests="1" failures="0" errors="0">
+   <testsuite name="TLP-order" tests="1" failures="0" errors="0" time="18.457" skipped="0" timestamp="2022-07-14 17:02:10" hostname="User - DESKTOP-7I3I0GG.mshome.net" id="Test Suites/TLP-order">
+      <properties>
+         <property name="deviceName" value=""/>
+         <property name="devicePlatform" value=""/>
+         <property name="logFolder" value="C:\\Users\\User\\Katalon Studio\\other-ins\\Reports\\20220714_170157\\TLP-order\\20220714_170157"/>
+         <property name="logFiles" value="C:\\Users\\User\\Katalon Studio\\other-ins\\Reports\\20220714_170157\\TLP-order\\20220714_170157\\execution0.log"/>
+         <property name="attachments" value=""/>
+         <property name="hostName" value="User - DESKTOP-7I3I0GG.mshome.net"/>
+         <property name="hostAddress" value="192.168.137.217"/>
+         <property name="os" value="Windows 10 64bit"/>
+         <property name="katalonVersion" value="8.1.0.208"/>
+      </properties>
+      <testcase name="Test Cases/TLP/1. other-ins_order TLP" time="17.03" classname="Test Cases/TLP/1. other-ins_order TLP" status="PASSED">
+         <system-out><![CDATA[2022-07-14 17:02:10 - [TEST_CASE][PASSED] - Test Cases/TLP/1. other-ins_order TLP: Test Cases/TLP/1. other-ins_order TLP
+
+2022-07-14 17:02:11 - [TEST_STEP][PASSED] - token = sendRequest(findTestObject("TLP/get_credential TLP")): Send request successfully
+
+2022-07-14 17:02:16 - [MESSAGE][INFO] - HAR: C:\Users\User\Katalon Studio\other-ins\Reports\20220714_170157\TLP-order\20220714_170157\requests\main\0.har
+
+2022-07-14 17:02:16 - [MESSAGE][PASSED] - Send request successfully
+
+2022-07-14 17:02:16 - [TEST_STEP][PASSED] - slurper = new groovy.json.JsonSlurper(): null
+
+2022-07-14 17:02:16 - [TEST_STEP][PASSED] - get_token = slurper.parseText(token.getResponseBodyContent()): null
+
+2022-07-14 17:02:16 - [TEST_STEP][PASSED] - private_token = access_token: null
+
+2022-07-14 17:02:16 - [TEST_STEP][PASSED] - g_token = private_token: null
+
+2022-07-14 17:02:16 - [TEST_STEP][PASSED] - println("token is :" + g_token): null
+
+2022-07-14 17:02:16 - [TEST_STEP][PASSED] - response_token = token.getResponseText(): null
+
+2022-07-14 17:02:16 - [TEST_STEP][PASSED] - logInfo($response_token): 
+            {
+                "token_type": "BearerToken",
+                "access_token": "dA6BWEDFZqjngaGYeDnxjFaiKGWF",
+                "expires_in": "1799",
+                "scope": ""
+            }
+        
+
+2022-07-14 17:02:16 - [MESSAGE][INFO] - 
+            {
+                "token_type": "BearerToken",
+                "access_token": "dA6BWEDFZqjngaGYeDnxjFaiKGWF",
+                "expires_in": "1799",
+                "scope": ""
+            }
+        
+
+2022-07-14 17:02:16 - [TEST_STEP][PASSED] - order = sendRequest(findTestObject("TLP/OtherInsOrderTLP", ["token":private_token, "id":id, "maskapai_id":maskapai_id, "source":source, "orderdate":orderdate])): Send request successfully
+
+2022-07-14 17:02:27 - [MESSAGE][INFO] - HAR: C:\Users\User\Katalon Studio\other-ins\Reports\20220714_170157\TLP-order\20220714_170157\requests\main\1.har
+
+2022-07-14 17:02:27 - [MESSAGE][PASSED] - Send request successfully
+
+2022-07-14 17:02:27 - [TEST_STEP][PASSED] - get_order = order.getResponseText(): null
+
+2022-07-14 17:02:27 - [TEST_STEP][PASSED] - logInfo($get_order): {
+  "GetOrderAsuransiTLCResponse" : {
+    "CurrentPage" : "1",
+    "TotalPage" : "1",
+    "TotalData" : "1",
+    "ListOrderAsuransiTLC" : [ {
+      "Norek" : "9490712658",
+      "Nopin" : "001",
+      "CustName" : "LANGIT LANGIT",
+      "CustAddr" : "KABEL 1",
+      "CustKel" : "KABEL 2",
+      "CustKec" : "KABEL 3",
+      "CustKab" : "KABEL 4",
+      "CustProp" : "KABEL 5",
+      "PostalCode" : "88127",
+      "JenisKelamin" : "M",
+      "IdKTP" : "7777777777888888",
+      "BirthDate" : "1900-01-01T00:00:00.000+07:00",
+      "StartPolisDate" : "2022-07-14T00:00:00.000+07:00",
+      "EndPolisDate" : "2023-07-14T00:00:00.000+07:00",
+      "NoReferensi" : "9490712658001",
+      "ModelKendaraan" : "AGYA",
+      "NoRangka" : "887",
+      "NoMesin" : "886",
+      "TahunKendaraan" : "2022",
+      "NoPolisi" : "",
+      "OTR" : "550000000.0000",
+      "PersentasePergantian" : "20",
+      "CompanyRate" : "0.070000",
+      "MaskapaiID" : "TLP"
+    } ]
+  }
+}
+
+2022-07-14 17:02:27 - [MESSAGE][INFO] - {
+  "GetOrderAsuransiTLCResponse" : {
+    "CurrentPage" : "1",
+    "TotalPage" : "1",
+    "TotalData" : "1",
+    "ListOrderAsuransiTLC" : [ {
+      "Norek" : "9490712658",
+      "Nopin" : "001",
+      "CustName" : "LANGIT LANGIT",
+      "CustAddr" : "KABEL 1",
+      "CustKel" : "KABEL 2",
+      "CustKec" : "KABEL 3",
+      "CustKab" : "KABEL 4",
+      "CustProp" : "KABEL 5",
+      "PostalCode" : "88127",
+      "JenisKelamin" : "M",
+      "IdKTP" : "7777777777888888",
+      "BirthDate" : "1900-01-01T00:00:00.000+07:00",
+      "StartPolisDate" : "2022-07-14T00:00:00.000+07:00",
+      "EndPolisDate" : "2023-07-14T00:00:00.000+07:00",
+      "NoReferensi" : "9490712658001",
+      "ModelKendaraan" : "AGYA",
+      "NoRangka" : "887",
+      "NoMesin" : "886",
+      "TahunKendaraan" : "2022",
+      "NoPolisi" : "",
+      "OTR" : "550000000.0000",
+      "PersentasePergantian" : "20",
+      "CompanyRate" : "0.070000",
+      "MaskapaiID" : "TLP"
+    } ]
+  }
+}]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <system-out><![CDATA[2022-07-14 17:02:10 - [TEST_SUITE][PASSED] - TLP-order: Test Cases/TLP/1. other-ins_order TLP]]></system-out>
+      <system-err><![CDATA[]]></system-err>
+   </testsuite>
+</testsuites>

@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="TLP-order" time="8.466" tests="1" failures="0" errors="0">
+   <testsuite name="TLP-order" tests="1" failures="0" errors="0" time="8.466" skipped="0" timestamp="2022-07-14 16:16:16" hostname="User - DESKTOP-7I3I0GG" id="Test Suites/TLP-order">
+      <properties>
+         <property name="deviceName" value=""/>
+         <property name="devicePlatform" value=""/>
+         <property name="logFolder" value="C:\\Users\\User\\Katalon Studio\\other-ins\\Reports\\20220714_161553\\TLP-order\\20220714_161553"/>
+         <property name="logFiles" value="C:\\Users\\User\\Katalon Studio\\other-ins\\Reports\\20220714_161553\\TLP-order\\20220714_161553\\execution0.log"/>
+         <property name="attachments" value=""/>
+         <property name="hostName" value="User - DESKTOP-7I3I0GG"/>
+         <property name="hostAddress" value="192.168.250.17"/>
+         <property name="os" value="Windows 10 64bit"/>
+         <property name="katalonVersion" value="8.1.0.208"/>
+      </properties>
+      <testcase name="Test Cases/TLP/1. other-ins_order TLP" time="6.855" classname="Test Cases/TLP/1. other-ins_order TLP" status="PASSED">
+         <system-out><![CDATA[2022-07-14 16:16:17 - [TEST_CASE][PASSED] - Test Cases/TLP/1. other-ins_order TLP: Test Cases/TLP/1. other-ins_order TLP
+
+2022-07-14 16:16:17 - [TEST_STEP][PASSED] - token = sendRequest(findTestObject("TLP/get_credential TLP")): Send request successfully
+
+2022-07-14 16:16:19 - [MESSAGE][INFO] - HAR: C:\Users\User\Katalon Studio\other-ins\Reports\20220714_161553\TLP-order\20220714_161553\requests\main\0.har
+
+2022-07-14 16:16:19 - [MESSAGE][PASSED] - Send request successfully
+
+2022-07-14 16:16:19 - [TEST_STEP][PASSED] - slurper = new groovy.json.JsonSlurper(): null
+
+2022-07-14 16:16:19 - [TEST_STEP][PASSED] - get_token = slurper.parseText(token.getResponseBodyContent()): null
+
+2022-07-14 16:16:19 - [TEST_STEP][PASSED] - private_token = access_token: null
+
+2022-07-14 16:16:19 - [TEST_STEP][PASSED] - g_token = private_token: null
+
+2022-07-14 16:16:19 - [TEST_STEP][PASSED] - println("token is :" + g_token): null
+
+2022-07-14 16:16:19 - [TEST_STEP][PASSED] - response_token = token.getResponseText(): null
+
+2022-07-14 16:16:19 - [TEST_STEP][PASSED] - logInfo($response_token): 
+            {
+                "token_type": "BearerToken",
+                "access_token": "jQoZ6UNkv3KjgEFRSajoKxehpWcT",
+                "expires_in": "1799",
+                "scope": ""
+            }
+        
+
+2022-07-14 16:16:20 - [MESSAGE][INFO] - 
+            {
+                "token_type": "BearerToken",
+                "access_token": "jQoZ6UNkv3KjgEFRSajoKxehpWcT",
+                "expires_in": "1799",
+                "scope": ""
+            }
+        
+
+2022-07-14 16:16:20 - [TEST_STEP][PASSED] - order = sendRequest(findTestObject("TLP/OtherInsOrderTLP", ["token":private_token, "id":id, "maskapai_id":maskapai_id, "source":source, "orderdate":orderdate])): Send request successfully
+
+2022-07-14 16:16:23 - [MESSAGE][INFO] - HAR: C:\Users\User\Katalon Studio\other-ins\Reports\20220714_161553\TLP-order\20220714_161553\requests\main\1.har
+
+2022-07-14 16:16:23 - [MESSAGE][PASSED] - Send request successfully
+
+2022-07-14 16:16:23 - [TEST_STEP][PASSED] - get_order = order.getResponseText(): null
+
+2022-07-14 16:16:23 - [TEST_STEP][PASSED] - logInfo($get_order): {
+  "GetOrderAsuransiTLCResponse" : {
+    "CurrentPage" : "1",
+    "TotalPage" : "1",
+    "TotalData" : "1",
+    "ListOrderAsuransiTLC" : [ {
+      "Norek" : "9490712655",
+      "Nopin" : "001",
+      "CustName" : "DITO SUHARJO",
+      "CustAddr" : "BANDUNG 2",
+      "CustKel" : "BANDUNG 3",
+      "CustKec" : "BANDUNG 4",
+      "CustKab" : "BANDUNG 5",
+      "CustProp" : "BANDUNG 6",
+      "PostalCode" : "25836",
+      "JenisKelamin" : "M",
+      "IdKTP" : "58745695588",
+      "BirthDate" : "1900-01-01T00:00:00.000+07:00",
+      "StartPolisDate" : "2022-07-08T00:00:00.000+07:00",
+      "EndPolisDate" : "2023-07-08T00:00:00.000+07:00",
+      "NoReferensi" : "9490712655001",
+      "ModelKendaraan" : "ALL NEW ALTIS",
+      "NoRangka" : "HJK97846531",
+      "NoMesin" : "ASD6544987",
+      "TahunKendaraan" : "2022",
+      "NoPolisi" : "32465978",
+      "OTR" : "300000000.0000",
+      "PersentasePergantian" : "20",
+      "CompanyRate" : "0.070000",
+      "MaskapaiID" : "TLP"
+    } ]
+  }
+}
+
+2022-07-14 16:16:23 - [MESSAGE][INFO] - {
+  "GetOrderAsuransiTLCResponse" : {
+    "CurrentPage" : "1",
+    "TotalPage" : "1",
+    "TotalData" : "1",
+    "ListOrderAsuransiTLC" : [ {
+      "Norek" : "9490712655",
+      "Nopin" : "001",
+      "CustName" : "DITO SUHARJO",
+      "CustAddr" : "BANDUNG 2",
+      "CustKel" : "BANDUNG 3",
+      "CustKec" : "BANDUNG 4",
+      "CustKab" : "BANDUNG 5",
+      "CustProp" : "BANDUNG 6",
+      "PostalCode" : "25836",
+      "JenisKelamin" : "M",
+      "IdKTP" : "58745695588",
+      "BirthDate" : "1900-01-01T00:00:00.000+07:00",
+      "StartPolisDate" : "2022-07-08T00:00:00.000+07:00",
+      "EndPolisDate" : "2023-07-08T00:00:00.000+07:00",
+      "NoReferensi" : "9490712655001",
+      "ModelKendaraan" : "ALL NEW ALTIS",
+      "NoRangka" : "HJK97846531",
+      "NoMesin" : "ASD6544987",
+      "TahunKendaraan" : "2022",
+      "NoPolisi" : "32465978",
+      "OTR" : "300000000.0000",
+      "PersentasePergantian" : "20",
+      "CompanyRate" : "0.070000",
+      "MaskapaiID" : "TLP"
+    } ]
+  }
+}]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <system-out><![CDATA[2022-07-14 16:16:16 - [TEST_SUITE][PASSED] - TLP-order: Test Cases/TLP/1. other-ins_order TLP]]></system-out>
+      <system-err><![CDATA[]]></system-err>
+   </testsuite>
+</testsuites>

@@ -1,0 +1,32 @@
+Suite/Test/Step Name,Browser,Description,Tag,Start time,End time,Duration,Status
+CPR-feedback,,,,2022-07-18 17:38:43,2022-07-18 17:38:49,6.665s,FAILED
+,,,,,,,
+Test Cases/CPR/2. other-ins_feedback CPR,,,,2022-07-18 17:38:43,2022-07-18 17:38:48,4.772s,FAILED
+"token = sendRequest(findTestObject(""CPR/get_credential_CPR""))",,,,2022-07-18 17:38:44,2022-07-18 17:38:47,2.615s,PASSED
+slurper = new groovy.json.JsonSlurper(),,store json response to variable,,2022-07-18 17:38:47,2022-07-18 17:38:47,0.020s,PASSED
+get_token = slurper.parseText(token.getResponseBodyContent()),,,,2022-07-18 17:38:47,2022-07-18 17:38:47,0.035s,PASSED
+private_token = access_token,,define / field api,,2022-07-18 17:38:47,2022-07-18 17:38:47,0.019s,PASSED
+g_token = private_token,,store var to global variable,,2022-07-18 17:38:47,2022-07-18 17:38:47,0.116s,PASSED
+"println(""token is :"" + g_token)",,,,2022-07-18 17:38:47,2022-07-18 17:38:47,0.005s,PASSED
+response_token = token.getResponseText(),,show response to report in test suite,,2022-07-18 17:38:47,2022-07-18 17:38:47,0.001s,PASSED
+logInfo($response_token),,,,2022-07-18 17:38:47,2022-07-18 17:38:47,0.054s,PASSED
+"feedback = sendRequest(findTestObject(""CPR/other-ins-feedback_CPR"", [""token"":private_token, ""id"":id, ""order_date"":order_date, ""source"":source, ""accno"":accno, ""nopolis"":nopolis]))",,,,2022-07-18 17:38:47,2022-07-18 17:38:48,0.757s,PASSED
+"verifyElementPropertyValue(feedback, ""FeedbackOrderInsCarWarrantyRs.StatusCode"", ""000"", CONTINUE_ON_FAILURE)",,,,2022-07-18 17:38:48,2022-07-18 17:38:48,0.138s,FAILED
+result_feedback = feedback.getResponseText(),,show response to report in test suite,,2022-07-18 17:38:48,2022-07-18 17:38:48,0.001s,PASSED
+"markPassed(""order date "" + order_date + "" data ke : "" + no)",,,,2022-07-18 17:38:48,2022-07-18 17:38:48,0.003s,PASSED
+logInfo($result_feedback),,,,2022-07-18 17:38:48,2022-07-18 17:38:48,0.004s,PASSED
+,,,,,,,
+Test Cases/CPR/2. other-ins_feedback CPR,,,,2022-07-18 17:38:48,2022-07-18 17:38:49,1.298s,FAILED
+"token = sendRequest(findTestObject(""CPR/get_credential_CPR""))",,,,2022-07-18 17:38:48,2022-07-18 17:38:48,0.250s,PASSED
+slurper = new groovy.json.JsonSlurper(),,store json response to variable,,2022-07-18 17:38:48,2022-07-18 17:38:48,0.001s,PASSED
+get_token = slurper.parseText(token.getResponseBodyContent()),,,,2022-07-18 17:38:48,2022-07-18 17:38:48,0.002s,PASSED
+private_token = access_token,,define / field api,,2022-07-18 17:38:48,2022-07-18 17:38:48,0.000s,PASSED
+g_token = private_token,,store var to global variable,,2022-07-18 17:38:48,2022-07-18 17:38:48,0.000s,PASSED
+"println(""token is :"" + g_token)",,,,2022-07-18 17:38:48,2022-07-18 17:38:48,0.001s,PASSED
+response_token = token.getResponseText(),,show response to report in test suite,,2022-07-18 17:38:48,2022-07-18 17:38:48,0.001s,PASSED
+logInfo($response_token),,,,2022-07-18 17:38:48,2022-07-18 17:38:48,0.002s,PASSED
+"feedback = sendRequest(findTestObject(""CPR/other-ins-feedback_CPR"", [""token"":private_token, ""id"":id, ""order_date"":order_date, ""source"":source, ""accno"":accno, ""nopolis"":nopolis]))",,,,2022-07-18 17:38:48,2022-07-18 17:38:49,0.852s,PASSED
+"verifyElementPropertyValue(feedback, ""FeedbackOrderInsCarWarrantyRs.StatusCode"", ""000"", CONTINUE_ON_FAILURE)",,,,2022-07-18 17:38:49,2022-07-18 17:38:49,0.080s,FAILED
+result_feedback = feedback.getResponseText(),,show response to report in test suite,,2022-07-18 17:38:49,2022-07-18 17:38:49,0.001s,PASSED
+"markPassed(""order date "" + order_date + "" data ke : "" + no)",,,,2022-07-18 17:38:49,2022-07-18 17:38:49,0.002s,PASSED
+logInfo($result_feedback),,,,2022-07-18 17:38:49,2022-07-18 17:38:49,0.001s,PASSED

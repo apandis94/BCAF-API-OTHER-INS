@@ -1,0 +1,15 @@
+Suite/Test/Step Name,Browser,Description,Tag,Start time,End time,Duration,Status
+TLP-order,,,,2022-07-14 15:29:51,2022-07-14 15:30:00,9.688s,PASSED
+,,,,,,,
+Test Cases/TLP/1. other-ins_order TLP,,,,2022-07-14 15:29:51,2022-07-14 15:30:00,9.264s,PASSED
+"token = sendRequest(findTestObject(""TLP/get_credential TLP""))",,,,2022-07-14 15:29:52,2022-07-14 15:29:54,2.549s,PASSED
+slurper = new groovy.json.JsonSlurper(),,store json response to variable,,2022-07-14 15:29:54,2022-07-14 15:29:54,0.023s,PASSED
+get_token = slurper.parseText(token.getResponseBodyContent()),,,,2022-07-14 15:29:54,2022-07-14 15:29:54,0.042s,PASSED
+private_token = access_token,,define / field api,,2022-07-14 15:29:54,2022-07-14 15:29:54,0.028s,PASSED
+g_token = private_token,,store var to global variable,,2022-07-14 15:29:54,2022-07-14 15:29:55,0.157s,PASSED
+"println(""token is :"" + g_token)",,,,2022-07-14 15:29:55,2022-07-14 15:29:55,0.006s,PASSED
+response_token = token.getResponseText(),,show response to report in test suite,,2022-07-14 15:29:55,2022-07-14 15:29:55,0.002s,PASSED
+logInfo($response_token),,,,2022-07-14 15:29:55,2022-07-14 15:29:55,0.092s,PASSED
+"order = sendRequest(findTestObject(""TLP/OtherInsOrderTLP"", [""token"":private_token, ""id"":id, ""maskapai_id"":maskapai_id, ""source"":source, ""orderdate"":orderdate]))",,,,2022-07-14 15:29:55,2022-07-14 15:30:00,5.780s,PASSED
+get_order = order.getResponseText(),,show response to report in test suite,,2022-07-14 15:30:00,2022-07-14 15:30:00,0.001s,PASSED
+logInfo($get_order),,,,2022-07-14 15:30:00,2022-07-14 15:30:00,0.001s,PASSED

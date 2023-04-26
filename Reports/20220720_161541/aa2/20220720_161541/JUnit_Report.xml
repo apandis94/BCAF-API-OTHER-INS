@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="aa2" time="106.259" tests="2" failures="0" errors="0">
+   <testsuite name="aa" tests="1" failures="0" errors="0" time="9.394" skipped="0" timestamp="2022-07-20 16:16:18" hostname="Nia Yusniati - Apandi" id="Test Suites/aa">
+      <properties>
+         <property name="deviceName" value=""/>
+         <property name="devicePlatform" value=""/>
+         <property name="logFolder" value="C:\\Users\\Nia Yusniati\\Git_Asa\\other-ins\\Reports\\20220720_161541\\aa\\20220720_161542"/>
+         <property name="logFiles" value="C:\\Users\\Nia Yusniati\\Git_Asa\\other-ins\\Reports\\20220720_161541\\aa\\20220720_161542\\execution0.log"/>
+         <property name="attachments" value=""/>
+         <property name="hostName" value="Nia Yusniati - Apandi"/>
+         <property name="hostAddress" value="10.10.90.120"/>
+         <property name="os" value="Windows 10 64bit"/>
+         <property name="katalonVersion" value="8.1.0.208"/>
+      </properties>
+      <testcase name="Test Cases/CFP/2. other-ins_feedback CFP" time="7.598" classname="Test Cases/CFP/2. other-ins_feedback CFP" status="PASSED">
+         <system-out><![CDATA[2022-07-20 16:16:19 - [TEST_CASE][PASSED] - Test Cases/CFP/2. other-ins_feedback CFP: Test Cases/CFP/2. other-ins_feedback CFP
+
+2022-07-20 16:16:22 - [TEST_STEP][PASSED] - token = sendRequest(findTestObject("CFP/credential CFP")): Send request successfully
+
+2022-07-20 16:16:25 - [MESSAGE][INFO] - HAR: C:\Users\Nia Yusniati\Git_Asa\other-ins\Reports\20220720_161541\aa\20220720_161542\requests\main\0.har
+
+2022-07-20 16:16:25 - [MESSAGE][PASSED] - Send request successfully
+
+2022-07-20 16:16:25 - [TEST_STEP][PASSED] - slurper = new groovy.json.JsonSlurper(): null
+
+2022-07-20 16:16:25 - [TEST_STEP][PASSED] - get_token = slurper.parseText(token.getResponseBodyContent()): null
+
+2022-07-20 16:16:25 - [TEST_STEP][PASSED] - private_token = access_token: null
+
+2022-07-20 16:16:25 - [TEST_STEP][PASSED] - g_token = private_token: null
+
+2022-07-20 16:16:25 - [TEST_STEP][PASSED] - println("token is :" + g_token): null
+
+2022-07-20 16:16:25 - [TEST_STEP][PASSED] - response_token = token.getResponseText(): null
+
+2022-07-20 16:16:25 - [TEST_STEP][PASSED] - logInfo($response_token): 
+            {
+                "token_type": "BearerToken",
+                "access_token": "sKxjl5oQ0sXzMvAndv7o4EIUb7Ye",
+                "expires_in": "1799",
+                "scope": ""
+            }
+        
+
+2022-07-20 16:16:25 - [MESSAGE][INFO] - 
+            {
+                "token_type": "BearerToken",
+                "access_token": "sKxjl5oQ0sXzMvAndv7o4EIUb7Ye",
+                "expires_in": "1799",
+                "scope": ""
+            }
+        
+
+2022-07-20 16:16:25 - [TEST_STEP][PASSED] - feedback = sendRequest(findTestObject("CFP/feedbackCFP", ["token":private_token, "norangka":norangka, "nokontrak":accno, "noimei":noimei, "nogsm":nogsm, "username":id])): Send request successfully
+
+2022-07-20 16:16:26 - [MESSAGE][INFO] - HAR: C:\Users\Nia Yusniati\Git_Asa\other-ins\Reports\20220720_161541\aa\20220720_161542\requests\main\1.har
+
+2022-07-20 16:16:26 - [MESSAGE][PASSED] - Send request successfully
+
+2022-07-20 16:16:26 - [TEST_STEP][PASSED] - verifyElementPropertyValue(feedback, "MessageCode", "003", CONTINUE_ON_FAILURE): Verify element property value successfully
+
+2022-07-20 16:16:26 - [MESSAGE][PASSED] - Verify element property value successfully
+
+2022-07-20 16:16:26 - [TEST_STEP][PASSED] - result_feedback = feedback.getResponseText(): null
+
+2022-07-20 16:16:26 - [TEST_STEP][PASSED] - markPassed("accno : " + accno + " data ke : " + no): accno : 1161008171001 data ke : 1
+
+2022-07-20 16:16:26 - [MESSAGE][PASSED] - accno : 1161008171001 data ke : 1
+
+2022-07-20 16:16:26 - [TEST_STEP][PASSED] - logInfo($result_feedback): {
+  "MessageCode" : "003",
+  "MessageName" : "Data belum pernah diorder"
+}
+
+2022-07-20 16:16:26 - [MESSAGE][INFO] - {
+  "MessageCode" : "003",
+  "MessageName" : "Data belum pernah diorder"
+}]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <system-out><![CDATA[2022-07-20 16:16:18 - [TEST_SUITE][PASSED] - aa: Test Cases/CFP/2. other-ins_feedback CFP]]></system-out>
+      <system-err><![CDATA[]]></system-err>
+   </testsuite>
+   <testsuite name="aa1" tests="1" failures="0" errors="0" time="7.827" skipped="0" timestamp="2022-07-20 16:16:59" hostname="Nia Yusniati - Apandi" id="Test Suites/aa1">
+      <properties>
+         <property name="deviceName" value=""/>
+         <property name="devicePlatform" value=""/>
+         <property name="logFolder" value="C:\\Users\\Nia Yusniati\\Git_Asa\\other-ins\\Reports\\20220720_161541\\aa1\\20220720_161545"/>
+         <property name="logFiles" value="C:\\Users\\Nia Yusniati\\Git_Asa\\other-ins\\Reports\\20220720_161541\\aa1\\20220720_161545\\execution0.log"/>
+         <property name="attachments" value=""/>
+         <property name="hostName" value="Nia Yusniati - Apandi"/>
+         <property name="hostAddress" value="10.10.90.120"/>
+         <property name="os" value="Windows 10 64bit"/>
+         <property name="katalonVersion" value="8.1.0.208"/>
+      </properties>
+      <testcase name="Test Cases/CFP/2. other-ins_feedback CFP" time="6.14" classname="Test Cases/CFP/2. other-ins_feedback CFP" status="PASSED">
+         <system-out><![CDATA[2022-07-20 16:17:00 - [TEST_CASE][PASSED] - Test Cases/CFP/2. other-ins_feedback CFP: Test Cases/CFP/2. other-ins_feedback CFP
+
+2022-07-20 16:17:02 - [TEST_STEP][PASSED] - token = sendRequest(findTestObject("CFP/credential CFP")): Send request successfully
+
+2022-07-20 16:17:04 - [MESSAGE][INFO] - HAR: C:\Users\Nia Yusniati\Git_Asa\other-ins\Reports\20220720_161541\aa1\20220720_161545\requests\main\0.har
+
+2022-07-20 16:17:05 - [MESSAGE][PASSED] - Send request successfully
+
+2022-07-20 16:17:05 - [TEST_STEP][PASSED] - slurper = new groovy.json.JsonSlurper(): null
+
+2022-07-20 16:17:05 - [TEST_STEP][PASSED] - get_token = slurper.parseText(token.getResponseBodyContent()): null
+
+2022-07-20 16:17:05 - [TEST_STEP][PASSED] - private_token = access_token: null
+
+2022-07-20 16:17:05 - [TEST_STEP][PASSED] - g_token = private_token: null
+
+2022-07-20 16:17:05 - [TEST_STEP][PASSED] - println("token is :" + g_token): null
+
+2022-07-20 16:17:05 - [TEST_STEP][PASSED] - response_token = token.getResponseText(): null
+
+2022-07-20 16:17:05 - [TEST_STEP][PASSED] - logInfo($response_token): 
+            {
+                "token_type": "BearerToken",
+                "access_token": "fMSP8x0HWucrr6HC9FR6RkLDWADz",
+                "expires_in": "1799",
+                "scope": ""
+            }
+        
+
+2022-07-20 16:17:05 - [MESSAGE][INFO] - 
+            {
+                "token_type": "BearerToken",
+                "access_token": "fMSP8x0HWucrr6HC9FR6RkLDWADz",
+                "expires_in": "1799",
+                "scope": ""
+            }
+        
+
+2022-07-20 16:17:05 - [TEST_STEP][PASSED] - feedback = sendRequest(findTestObject("CFP/feedbackCFP", ["token":private_token, "norangka":norangka, "nokontrak":accno, "noimei":noimei, "nogsm":nogsm, "username":id])): Send request successfully
+
+2022-07-20 16:17:06 - [MESSAGE][INFO] - HAR: C:\Users\Nia Yusniati\Git_Asa\other-ins\Reports\20220720_161541\aa1\20220720_161545\requests\main\1.har
+
+2022-07-20 16:17:06 - [MESSAGE][PASSED] - Send request successfully
+
+2022-07-20 16:17:06 - [TEST_STEP][PASSED] - verifyElementPropertyValue(feedback, "MessageCode", "003", CONTINUE_ON_FAILURE): Verify element property value successfully
+
+2022-07-20 16:17:06 - [MESSAGE][PASSED] - Verify element property value successfully
+
+2022-07-20 16:17:06 - [TEST_STEP][PASSED] - result_feedback = feedback.getResponseText(): null
+
+2022-07-20 16:17:06 - [TEST_STEP][PASSED] - markPassed("accno : " + accno + " data ke : " + no): accno : 1161008171001 data ke : 1
+
+2022-07-20 16:17:06 - [MESSAGE][PASSED] - accno : 1161008171001 data ke : 1
+
+2022-07-20 16:17:06 - [TEST_STEP][PASSED] - logInfo($result_feedback): {
+  "MessageCode" : "003",
+  "MessageName" : "Data belum pernah diorder"
+}
+
+2022-07-20 16:17:06 - [MESSAGE][INFO] - {
+  "MessageCode" : "003",
+  "MessageName" : "Data belum pernah diorder"
+}]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <system-out><![CDATA[2022-07-20 16:16:59 - [TEST_SUITE][PASSED] - aa1: Test Cases/CFP/2. other-ins_feedback CFP]]></system-out>
+      <system-err><![CDATA[]]></system-err>
+   </testsuite>
+</testsuites>

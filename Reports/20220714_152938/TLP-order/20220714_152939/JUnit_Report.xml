@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="TLP-order" time="10.425" tests="1" failures="0" errors="0">
+   <testsuite name="TLP-order" tests="1" failures="0" errors="0" time="10.425" skipped="0" timestamp="2022-07-14 15:29:51" hostname="User - DESKTOP-7I3I0GG.mshome.net" id="Test Suites/TLP-order">
+      <properties>
+         <property name="deviceName" value=""/>
+         <property name="devicePlatform" value=""/>
+         <property name="logFolder" value="C:\\Users\\User\\Katalon Studio\\other-ins\\Reports\\20220714_152938\\TLP-order\\20220714_152939"/>
+         <property name="logFiles" value="C:\\Users\\User\\Katalon Studio\\other-ins\\Reports\\20220714_152938\\TLP-order\\20220714_152939\\execution0.log"/>
+         <property name="attachments" value=""/>
+         <property name="hostName" value="User - DESKTOP-7I3I0GG.mshome.net"/>
+         <property name="hostAddress" value="192.168.137.217"/>
+         <property name="os" value="Windows 10 64bit"/>
+         <property name="katalonVersion" value="8.1.0.208"/>
+      </properties>
+      <testcase name="Test Cases/TLP/1. other-ins_order TLP" time="9.264" classname="Test Cases/TLP/1. other-ins_order TLP" status="PASSED">
+         <system-out><![CDATA[2022-07-14 15:29:51 - [TEST_CASE][PASSED] - Test Cases/TLP/1. other-ins_order TLP: Test Cases/TLP/1. other-ins_order TLP
+
+2022-07-14 15:29:52 - [TEST_STEP][PASSED] - token = sendRequest(findTestObject("TLP/get_credential TLP")): Send request successfully
+
+2022-07-14 15:29:54 - [MESSAGE][INFO] - HAR: C:\Users\User\Katalon Studio\other-ins\Reports\20220714_152938\TLP-order\20220714_152939\requests\main\0.har
+
+2022-07-14 15:29:54 - [MESSAGE][PASSED] - Send request successfully
+
+2022-07-14 15:29:54 - [TEST_STEP][PASSED] - slurper = new groovy.json.JsonSlurper(): null
+
+2022-07-14 15:29:54 - [TEST_STEP][PASSED] - get_token = slurper.parseText(token.getResponseBodyContent()): null
+
+2022-07-14 15:29:54 - [TEST_STEP][PASSED] - private_token = access_token: null
+
+2022-07-14 15:29:54 - [TEST_STEP][PASSED] - g_token = private_token: null
+
+2022-07-14 15:29:55 - [TEST_STEP][PASSED] - println("token is :" + g_token): null
+
+2022-07-14 15:29:55 - [TEST_STEP][PASSED] - response_token = token.getResponseText(): null
+
+2022-07-14 15:29:55 - [TEST_STEP][PASSED] - logInfo($response_token): 
+            {
+                "token_type": "BearerToken",
+                "access_token": "yTNAfo0GleOwoKUaiOx7aqm5IkuX",
+                "expires_in": "1799",
+                "scope": ""
+            }
+        
+
+2022-07-14 15:29:55 - [MESSAGE][INFO] - 
+            {
+                "token_type": "BearerToken",
+                "access_token": "yTNAfo0GleOwoKUaiOx7aqm5IkuX",
+                "expires_in": "1799",
+                "scope": ""
+            }
+        
+
+2022-07-14 15:29:55 - [TEST_STEP][PASSED] - order = sendRequest(findTestObject("TLP/OtherInsOrderTLP", ["token":private_token, "id":id, "maskapai_id":maskapai_id, "source":source, "orderdate":orderdate])): Send request successfully
+
+2022-07-14 15:30:00 - [MESSAGE][INFO] - HAR: C:\Users\User\Katalon Studio\other-ins\Reports\20220714_152938\TLP-order\20220714_152939\requests\main\1.har
+
+2022-07-14 15:30:00 - [MESSAGE][PASSED] - Send request successfully
+
+2022-07-14 15:30:00 - [TEST_STEP][PASSED] - get_order = order.getResponseText(): null
+
+2022-07-14 15:30:00 - [TEST_STEP][PASSED] - logInfo($get_order): <?xml version="1.0" encoding="UTF-8"?>
+<err:RestError xmlns:err="http://www.bea.com/wli/sb/errors"><err:errorMessage>OSB Service Callout action received SOAP Fault response</err:errorMessage><err:errorCode>OSB-382500</err:errorCode></err:RestError>
+
+2022-07-14 15:30:00 - [MESSAGE][INFO] - <?xml version="1.0" encoding="UTF-8"?>
+<err:RestError xmlns:err="http://www.bea.com/wli/sb/errors"><err:errorMessage>OSB Service Callout action received SOAP Fault response</err:errorMessage><err:errorCode>OSB-382500</err:errorCode></err:RestError>]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <system-out><![CDATA[2022-07-14 15:29:51 - [TEST_SUITE][PASSED] - TLP-order: Test Cases/TLP/1. other-ins_order TLP]]></system-out>
+      <system-err><![CDATA[]]></system-err>
+   </testsuite>
+</testsuites>

@@ -1,0 +1,508 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="TLP-feedback" time="5.041" tests="7" failures="0" errors="0">
+   <testsuite name="TLP-feedback" tests="7" failures="0" errors="0" time="5.041" skipped="0" timestamp="2022-06-15 16:21:47" hostname="flavalize - localhost" id="Test Suites/TLP-feedback">
+      <properties>
+         <property name="deviceName" value=""/>
+         <property name="devicePlatform" value=""/>
+         <property name="logFolder" value="/Volumes/Data/app-testing/app-project/other-ins/Reports/20220615_162136/TLP-feedback/20220615_162137"/>
+         <property name="logFiles" value="/Volumes/Data/app-testing/app-project/other-ins/Reports/20220615_162136/TLP-feedback/20220615_162137/execution0.log"/>
+         <property name="attachments" value=""/>
+         <property name="hostName" value="flavalize - localhost"/>
+         <property name="hostAddress" value="127.0.0.1"/>
+         <property name="os" value="Mac OS X 64bit"/>
+         <property name="katalonVersion" value="8.3.0.208"/>
+      </properties>
+      <testcase name="Test Cases/TLP/2. other-ins_feedback TLP" time="1.722" classname="Test Cases/TLP/2. other-ins_feedback TLP" status="PASSED">
+         <system-out><![CDATA[2022-06-15 16:21:48 - [TEST_CASE][PASSED] - Test Cases/TLP/2. other-ins_feedback TLP: Test Cases/TLP/2. other-ins_feedback TLP
+
+2022-06-15 16:21:48 - [TEST_STEP][PASSED] - token = sendRequest(findTestObject("TLP/get_credential TLP")): Send request successfully
+
+2022-06-15 16:21:49 - [MESSAGE][INFO] - HAR: /Volumes/Data/app-testing/app-project/other-ins/Reports/20220615_162136/TLP-feedback/20220615_162137/requests/main/0.har
+
+2022-06-15 16:21:49 - [MESSAGE][PASSED] - Send request successfully
+
+2022-06-15 16:21:49 - [TEST_STEP][PASSED] - slurper = new groovy.json.JsonSlurper(): null
+
+2022-06-15 16:21:49 - [TEST_STEP][PASSED] - get_token = slurper.parseText(token.getResponseBodyContent()): null
+
+2022-06-15 16:21:49 - [TEST_STEP][PASSED] - private_token = access_token: null
+
+2022-06-15 16:21:49 - [TEST_STEP][PASSED] - g_token = private_token: null
+
+2022-06-15 16:21:49 - [TEST_STEP][PASSED] - println("token is :" + g_token): null
+
+2022-06-15 16:21:49 - [TEST_STEP][PASSED] - response_token = token.getResponseText(): null
+
+2022-06-15 16:21:49 - [TEST_STEP][PASSED] - logInfo($response_token): 
+            {
+                "token_type": "BearerToken",
+                "access_token": "lciBLpKKiPMG8DWcLsdAnN6KILI4",
+                "expires_in": "1799",
+                "scope": ""
+            }
+        
+
+2022-06-15 16:21:49 - [MESSAGE][INFO] - 
+            {
+                "token_type": "BearerToken",
+                "access_token": "lciBLpKKiPMG8DWcLsdAnN6KILI4",
+                "expires_in": "1799",
+                "scope": ""
+            }
+        
+
+2022-06-15 16:21:49 - [TEST_STEP][PASSED] - feedback = sendRequest(findTestObject("TLP/OtherInsFeedbackTLP", ["token":private_token, "id":id, "maskapai_id":maskapai_id, "source":source, "orderdate":orderdate, "no_reff":accno, "no_polis":no_polis])): Send request successfully
+
+2022-06-15 16:21:49 - [MESSAGE][INFO] - HAR: /Volumes/Data/app-testing/app-project/other-ins/Reports/20220615_162136/TLP-feedback/20220615_162137/requests/main/1.har
+
+2022-06-15 16:21:49 - [MESSAGE][PASSED] - Send request successfully
+
+2022-06-15 16:21:49 - [TEST_STEP][PASSED] - verifyElementPropertyValue(feedback, "SubmitPolisAsuransiTLCResponse.StatusCode", "00", CONTINUE_ON_FAILURE): Verify element property value successfully
+
+2022-06-15 16:21:49 - [MESSAGE][PASSED] - Verify element property value successfully
+
+2022-06-15 16:21:49 - [TEST_STEP][PASSED] - result_feedback = feedback.getResponseText(): null
+
+2022-06-15 16:21:49 - [TEST_STEP][PASSED] - markPassed("order date " + orderdate + " data ke : " + no): order date 2022-04-25 data ke : 2
+
+2022-06-15 16:21:49 - [MESSAGE][PASSED] - order date 2022-04-25 data ke : 2
+
+2022-06-15 16:21:49 - [TEST_STEP][PASSED] - logInfo($result_feedback): {
+  "SubmitPolisAsuransiTLCResponse" : {
+    "StatusCode" : "00",
+    "Message" : "No Polis berhasil diterima "
+  }
+}
+
+2022-06-15 16:21:49 - [MESSAGE][INFO] - {
+  "SubmitPolisAsuransiTLCResponse" : {
+    "StatusCode" : "00",
+    "Message" : "No Polis berhasil diterima "
+  }
+}]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/TLP/2. other-ins_feedback TLP" time="0.377" classname="Test Cases/TLP/2. other-ins_feedback TLP" status="PASSED">
+         <system-out><![CDATA[2022-06-15 16:21:49 - [TEST_CASE][PASSED] - Test Cases/TLP/2. other-ins_feedback TLP: Test Cases/TLP/2. other-ins_feedback TLP
+
+2022-06-15 16:21:49 - [TEST_STEP][PASSED] - token = sendRequest(findTestObject("TLP/get_credential TLP")): Send request successfully
+
+2022-06-15 16:21:50 - [MESSAGE][INFO] - HAR: /Volumes/Data/app-testing/app-project/other-ins/Reports/20220615_162136/TLP-feedback/20220615_162137/requests/main/2.har
+
+2022-06-15 16:21:50 - [MESSAGE][PASSED] - Send request successfully
+
+2022-06-15 16:21:50 - [TEST_STEP][PASSED] - slurper = new groovy.json.JsonSlurper(): null
+
+2022-06-15 16:21:50 - [TEST_STEP][PASSED] - get_token = slurper.parseText(token.getResponseBodyContent()): null
+
+2022-06-15 16:21:50 - [TEST_STEP][PASSED] - private_token = access_token: null
+
+2022-06-15 16:21:50 - [TEST_STEP][PASSED] - g_token = private_token: null
+
+2022-06-15 16:21:50 - [TEST_STEP][PASSED] - println("token is :" + g_token): null
+
+2022-06-15 16:21:50 - [TEST_STEP][PASSED] - response_token = token.getResponseText(): null
+
+2022-06-15 16:21:50 - [TEST_STEP][PASSED] - logInfo($response_token): 
+            {
+                "token_type": "BearerToken",
+                "access_token": "TgrTpVIs5XSBAt3hGCf8itRio9wz",
+                "expires_in": "1799",
+                "scope": ""
+            }
+        
+
+2022-06-15 16:21:50 - [MESSAGE][INFO] - 
+            {
+                "token_type": "BearerToken",
+                "access_token": "TgrTpVIs5XSBAt3hGCf8itRio9wz",
+                "expires_in": "1799",
+                "scope": ""
+            }
+        
+
+2022-06-15 16:21:50 - [TEST_STEP][PASSED] - feedback = sendRequest(findTestObject("TLP/OtherInsFeedbackTLP", ["token":private_token, "id":id, "maskapai_id":maskapai_id, "source":source, "orderdate":orderdate, "no_reff":accno, "no_polis":no_polis])): Send request successfully
+
+2022-06-15 16:21:50 - [MESSAGE][INFO] - HAR: /Volumes/Data/app-testing/app-project/other-ins/Reports/20220615_162136/TLP-feedback/20220615_162137/requests/main/3.har
+
+2022-06-15 16:21:50 - [MESSAGE][PASSED] - Send request successfully
+
+2022-06-15 16:21:50 - [TEST_STEP][PASSED] - verifyElementPropertyValue(feedback, "SubmitPolisAsuransiTLCResponse.StatusCode", "00", CONTINUE_ON_FAILURE): Verify element property value successfully
+
+2022-06-15 16:21:50 - [MESSAGE][PASSED] - Verify element property value successfully
+
+2022-06-15 16:21:50 - [TEST_STEP][PASSED] - result_feedback = feedback.getResponseText(): null
+
+2022-06-15 16:21:50 - [TEST_STEP][PASSED] - markPassed("order date " + orderdate + " data ke : " + no): order date 2022-04-25 data ke : 3
+
+2022-06-15 16:21:50 - [MESSAGE][PASSED] - order date 2022-04-25 data ke : 3
+
+2022-06-15 16:21:50 - [TEST_STEP][PASSED] - logInfo($result_feedback): {
+  "SubmitPolisAsuransiTLCResponse" : {
+    "StatusCode" : "00",
+    "Message" : "No Polis berhasil diterima "
+  }
+}
+
+2022-06-15 16:21:50 - [MESSAGE][INFO] - {
+  "SubmitPolisAsuransiTLCResponse" : {
+    "StatusCode" : "00",
+    "Message" : "No Polis berhasil diterima "
+  }
+}]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/TLP/2. other-ins_feedback TLP" time="0.438" classname="Test Cases/TLP/2. other-ins_feedback TLP" status="PASSED">
+         <system-out><![CDATA[2022-06-15 16:21:50 - [TEST_CASE][PASSED] - Test Cases/TLP/2. other-ins_feedback TLP: Test Cases/TLP/2. other-ins_feedback TLP
+
+2022-06-15 16:21:50 - [TEST_STEP][PASSED] - token = sendRequest(findTestObject("TLP/get_credential TLP")): Send request successfully
+
+2022-06-15 16:21:50 - [MESSAGE][INFO] - HAR: /Volumes/Data/app-testing/app-project/other-ins/Reports/20220615_162136/TLP-feedback/20220615_162137/requests/main/4.har
+
+2022-06-15 16:21:50 - [MESSAGE][PASSED] - Send request successfully
+
+2022-06-15 16:21:50 - [TEST_STEP][PASSED] - slurper = new groovy.json.JsonSlurper(): null
+
+2022-06-15 16:21:50 - [TEST_STEP][PASSED] - get_token = slurper.parseText(token.getResponseBodyContent()): null
+
+2022-06-15 16:21:50 - [TEST_STEP][PASSED] - private_token = access_token: null
+
+2022-06-15 16:21:50 - [TEST_STEP][PASSED] - g_token = private_token: null
+
+2022-06-15 16:21:50 - [TEST_STEP][PASSED] - println("token is :" + g_token): null
+
+2022-06-15 16:21:50 - [TEST_STEP][PASSED] - response_token = token.getResponseText(): null
+
+2022-06-15 16:21:50 - [TEST_STEP][PASSED] - logInfo($response_token): 
+            {
+                "token_type": "BearerToken",
+                "access_token": "tTMnLd6lEMxZeuITSzoPWi8EPNtt",
+                "expires_in": "1799",
+                "scope": ""
+            }
+        
+
+2022-06-15 16:21:50 - [MESSAGE][INFO] - 
+            {
+                "token_type": "BearerToken",
+                "access_token": "tTMnLd6lEMxZeuITSzoPWi8EPNtt",
+                "expires_in": "1799",
+                "scope": ""
+            }
+        
+
+2022-06-15 16:21:50 - [TEST_STEP][PASSED] - feedback = sendRequest(findTestObject("TLP/OtherInsFeedbackTLP", ["token":private_token, "id":id, "maskapai_id":maskapai_id, "source":source, "orderdate":orderdate, "no_reff":accno, "no_polis":no_polis])): Send request successfully
+
+2022-06-15 16:21:50 - [MESSAGE][INFO] - HAR: /Volumes/Data/app-testing/app-project/other-ins/Reports/20220615_162136/TLP-feedback/20220615_162137/requests/main/5.har
+
+2022-06-15 16:21:50 - [MESSAGE][PASSED] - Send request successfully
+
+2022-06-15 16:21:50 - [TEST_STEP][PASSED] - verifyElementPropertyValue(feedback, "SubmitPolisAsuransiTLCResponse.StatusCode", "00", CONTINUE_ON_FAILURE): Verify element property value successfully
+
+2022-06-15 16:21:50 - [MESSAGE][PASSED] - Verify element property value successfully
+
+2022-06-15 16:21:50 - [TEST_STEP][PASSED] - result_feedback = feedback.getResponseText(): null
+
+2022-06-15 16:21:50 - [TEST_STEP][PASSED] - markPassed("order date " + orderdate + " data ke : " + no): order date 2022-04-25 data ke : 4
+
+2022-06-15 16:21:50 - [MESSAGE][PASSED] - order date 2022-04-25 data ke : 4
+
+2022-06-15 16:21:50 - [TEST_STEP][PASSED] - logInfo($result_feedback): {
+  "SubmitPolisAsuransiTLCResponse" : {
+    "StatusCode" : "00",
+    "Message" : "No Polis berhasil diterima "
+  }
+}
+
+2022-06-15 16:21:50 - [MESSAGE][INFO] - {
+  "SubmitPolisAsuransiTLCResponse" : {
+    "StatusCode" : "00",
+    "Message" : "No Polis berhasil diterima "
+  }
+}]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/TLP/2. other-ins_feedback TLP" time="0.88" classname="Test Cases/TLP/2. other-ins_feedback TLP" status="PASSED">
+         <system-out><![CDATA[2022-06-15 16:21:50 - [TEST_CASE][PASSED] - Test Cases/TLP/2. other-ins_feedback TLP: Test Cases/TLP/2. other-ins_feedback TLP
+
+2022-06-15 16:21:50 - [TEST_STEP][PASSED] - token = sendRequest(findTestObject("TLP/get_credential TLP")): Send request successfully
+
+2022-06-15 16:21:50 - [MESSAGE][INFO] - HAR: /Volumes/Data/app-testing/app-project/other-ins/Reports/20220615_162136/TLP-feedback/20220615_162137/requests/main/6.har
+
+2022-06-15 16:21:50 - [MESSAGE][PASSED] - Send request successfully
+
+2022-06-15 16:21:50 - [TEST_STEP][PASSED] - slurper = new groovy.json.JsonSlurper(): null
+
+2022-06-15 16:21:50 - [TEST_STEP][PASSED] - get_token = slurper.parseText(token.getResponseBodyContent()): null
+
+2022-06-15 16:21:50 - [TEST_STEP][PASSED] - private_token = access_token: null
+
+2022-06-15 16:21:50 - [TEST_STEP][PASSED] - g_token = private_token: null
+
+2022-06-15 16:21:50 - [TEST_STEP][PASSED] - println("token is :" + g_token): null
+
+2022-06-15 16:21:50 - [TEST_STEP][PASSED] - response_token = token.getResponseText(): null
+
+2022-06-15 16:21:50 - [TEST_STEP][PASSED] - logInfo($response_token): 
+            {
+                "token_type": "BearerToken",
+                "access_token": "IYA5RYJImiblMoqXSSk7ePGZLfod",
+                "expires_in": "1799",
+                "scope": ""
+            }
+        
+
+2022-06-15 16:21:50 - [MESSAGE][INFO] - 
+            {
+                "token_type": "BearerToken",
+                "access_token": "IYA5RYJImiblMoqXSSk7ePGZLfod",
+                "expires_in": "1799",
+                "scope": ""
+            }
+        
+
+2022-06-15 16:21:50 - [TEST_STEP][PASSED] - feedback = sendRequest(findTestObject("TLP/OtherInsFeedbackTLP", ["token":private_token, "id":id, "maskapai_id":maskapai_id, "source":source, "orderdate":orderdate, "no_reff":accno, "no_polis":no_polis])): Send request successfully
+
+2022-06-15 16:21:51 - [MESSAGE][INFO] - HAR: /Volumes/Data/app-testing/app-project/other-ins/Reports/20220615_162136/TLP-feedback/20220615_162137/requests/main/7.har
+
+2022-06-15 16:21:51 - [MESSAGE][PASSED] - Send request successfully
+
+2022-06-15 16:21:51 - [TEST_STEP][PASSED] - verifyElementPropertyValue(feedback, "SubmitPolisAsuransiTLCResponse.StatusCode", "00", CONTINUE_ON_FAILURE): Verify element property value successfully
+
+2022-06-15 16:21:51 - [MESSAGE][PASSED] - Verify element property value successfully
+
+2022-06-15 16:21:51 - [TEST_STEP][PASSED] - result_feedback = feedback.getResponseText(): null
+
+2022-06-15 16:21:51 - [TEST_STEP][PASSED] - markPassed("order date " + orderdate + " data ke : " + no): order date 2022-04-25 data ke : 5
+
+2022-06-15 16:21:51 - [MESSAGE][PASSED] - order date 2022-04-25 data ke : 5
+
+2022-06-15 16:21:51 - [TEST_STEP][PASSED] - logInfo($result_feedback): {
+  "SubmitPolisAsuransiTLCResponse" : {
+    "StatusCode" : "00",
+    "Message" : "No Polis berhasil diterima "
+  }
+}
+
+2022-06-15 16:21:51 - [MESSAGE][INFO] - {
+  "SubmitPolisAsuransiTLCResponse" : {
+    "StatusCode" : "00",
+    "Message" : "No Polis berhasil diterima "
+  }
+}]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/TLP/2. other-ins_feedback TLP" time="0.39" classname="Test Cases/TLP/2. other-ins_feedback TLP" status="PASSED">
+         <system-out><![CDATA[2022-06-15 16:21:51 - [TEST_CASE][PASSED] - Test Cases/TLP/2. other-ins_feedback TLP: Test Cases/TLP/2. other-ins_feedback TLP
+
+2022-06-15 16:21:51 - [TEST_STEP][PASSED] - token = sendRequest(findTestObject("TLP/get_credential TLP")): Send request successfully
+
+2022-06-15 16:21:51 - [MESSAGE][INFO] - HAR: /Volumes/Data/app-testing/app-project/other-ins/Reports/20220615_162136/TLP-feedback/20220615_162137/requests/main/8.har
+
+2022-06-15 16:21:51 - [MESSAGE][PASSED] - Send request successfully
+
+2022-06-15 16:21:51 - [TEST_STEP][PASSED] - slurper = new groovy.json.JsonSlurper(): null
+
+2022-06-15 16:21:51 - [TEST_STEP][PASSED] - get_token = slurper.parseText(token.getResponseBodyContent()): null
+
+2022-06-15 16:21:51 - [TEST_STEP][PASSED] - private_token = access_token: null
+
+2022-06-15 16:21:51 - [TEST_STEP][PASSED] - g_token = private_token: null
+
+2022-06-15 16:21:51 - [TEST_STEP][PASSED] - println("token is :" + g_token): null
+
+2022-06-15 16:21:51 - [TEST_STEP][PASSED] - response_token = token.getResponseText(): null
+
+2022-06-15 16:21:51 - [TEST_STEP][PASSED] - logInfo($response_token): 
+            {
+                "token_type": "BearerToken",
+                "access_token": "mBPht7AXOndpmlMc8CO0KOLgadck",
+                "expires_in": "1799",
+                "scope": ""
+            }
+        
+
+2022-06-15 16:21:51 - [MESSAGE][INFO] - 
+            {
+                "token_type": "BearerToken",
+                "access_token": "mBPht7AXOndpmlMc8CO0KOLgadck",
+                "expires_in": "1799",
+                "scope": ""
+            }
+        
+
+2022-06-15 16:21:51 - [TEST_STEP][PASSED] - feedback = sendRequest(findTestObject("TLP/OtherInsFeedbackTLP", ["token":private_token, "id":id, "maskapai_id":maskapai_id, "source":source, "orderdate":orderdate, "no_reff":accno, "no_polis":no_polis])): Send request successfully
+
+2022-06-15 16:21:52 - [MESSAGE][INFO] - HAR: /Volumes/Data/app-testing/app-project/other-ins/Reports/20220615_162136/TLP-feedback/20220615_162137/requests/main/9.har
+
+2022-06-15 16:21:52 - [MESSAGE][PASSED] - Send request successfully
+
+2022-06-15 16:21:52 - [TEST_STEP][PASSED] - verifyElementPropertyValue(feedback, "SubmitPolisAsuransiTLCResponse.StatusCode", "00", CONTINUE_ON_FAILURE): Verify element property value successfully
+
+2022-06-15 16:21:52 - [MESSAGE][PASSED] - Verify element property value successfully
+
+2022-06-15 16:21:52 - [TEST_STEP][PASSED] - result_feedback = feedback.getResponseText(): null
+
+2022-06-15 16:21:52 - [TEST_STEP][PASSED] - markPassed("order date " + orderdate + " data ke : " + no): order date 2022-04-25 data ke : 6
+
+2022-06-15 16:21:52 - [MESSAGE][PASSED] - order date 2022-04-25 data ke : 6
+
+2022-06-15 16:21:52 - [TEST_STEP][PASSED] - logInfo($result_feedback): {
+  "SubmitPolisAsuransiTLCResponse" : {
+    "StatusCode" : "00",
+    "Message" : "No Polis berhasil diterima "
+  }
+}
+
+2022-06-15 16:21:52 - [MESSAGE][INFO] - {
+  "SubmitPolisAsuransiTLCResponse" : {
+    "StatusCode" : "00",
+    "Message" : "No Polis berhasil diterima "
+  }
+}]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/TLP/2. other-ins_feedback TLP" time="0.383" classname="Test Cases/TLP/2. other-ins_feedback TLP" status="PASSED">
+         <system-out><![CDATA[2022-06-15 16:21:52 - [TEST_CASE][PASSED] - Test Cases/TLP/2. other-ins_feedback TLP: Test Cases/TLP/2. other-ins_feedback TLP
+
+2022-06-15 16:21:52 - [TEST_STEP][PASSED] - token = sendRequest(findTestObject("TLP/get_credential TLP")): Send request successfully
+
+2022-06-15 16:21:52 - [MESSAGE][INFO] - HAR: /Volumes/Data/app-testing/app-project/other-ins/Reports/20220615_162136/TLP-feedback/20220615_162137/requests/main/10.har
+
+2022-06-15 16:21:52 - [MESSAGE][PASSED] - Send request successfully
+
+2022-06-15 16:21:52 - [TEST_STEP][PASSED] - slurper = new groovy.json.JsonSlurper(): null
+
+2022-06-15 16:21:52 - [TEST_STEP][PASSED] - get_token = slurper.parseText(token.getResponseBodyContent()): null
+
+2022-06-15 16:21:52 - [TEST_STEP][PASSED] - private_token = access_token: null
+
+2022-06-15 16:21:52 - [TEST_STEP][PASSED] - g_token = private_token: null
+
+2022-06-15 16:21:52 - [TEST_STEP][PASSED] - println("token is :" + g_token): null
+
+2022-06-15 16:21:52 - [TEST_STEP][PASSED] - response_token = token.getResponseText(): null
+
+2022-06-15 16:21:52 - [TEST_STEP][PASSED] - logInfo($response_token): 
+            {
+                "token_type": "BearerToken",
+                "access_token": "fsUI3v2fvvfJ1pRHAxyMYRPtAMo4",
+                "expires_in": "1799",
+                "scope": ""
+            }
+        
+
+2022-06-15 16:21:52 - [MESSAGE][INFO] - 
+            {
+                "token_type": "BearerToken",
+                "access_token": "fsUI3v2fvvfJ1pRHAxyMYRPtAMo4",
+                "expires_in": "1799",
+                "scope": ""
+            }
+        
+
+2022-06-15 16:21:52 - [TEST_STEP][PASSED] - feedback = sendRequest(findTestObject("TLP/OtherInsFeedbackTLP", ["token":private_token, "id":id, "maskapai_id":maskapai_id, "source":source, "orderdate":orderdate, "no_reff":accno, "no_polis":no_polis])): Send request successfully
+
+2022-06-15 16:21:52 - [MESSAGE][INFO] - HAR: /Volumes/Data/app-testing/app-project/other-ins/Reports/20220615_162136/TLP-feedback/20220615_162137/requests/main/11.har
+
+2022-06-15 16:21:52 - [MESSAGE][PASSED] - Send request successfully
+
+2022-06-15 16:21:52 - [TEST_STEP][PASSED] - verifyElementPropertyValue(feedback, "SubmitPolisAsuransiTLCResponse.StatusCode", "00", CONTINUE_ON_FAILURE): Verify element property value successfully
+
+2022-06-15 16:21:52 - [MESSAGE][PASSED] - Verify element property value successfully
+
+2022-06-15 16:21:52 - [TEST_STEP][PASSED] - result_feedback = feedback.getResponseText(): null
+
+2022-06-15 16:21:52 - [TEST_STEP][PASSED] - markPassed("order date " + orderdate + " data ke : " + no): order date 2022-04-25 data ke : 7
+
+2022-06-15 16:21:52 - [MESSAGE][PASSED] - order date 2022-04-25 data ke : 7
+
+2022-06-15 16:21:52 - [TEST_STEP][PASSED] - logInfo($result_feedback): {
+  "SubmitPolisAsuransiTLCResponse" : {
+    "StatusCode" : "00",
+    "Message" : "No Polis berhasil diterima "
+  }
+}
+
+2022-06-15 16:21:52 - [MESSAGE][INFO] - {
+  "SubmitPolisAsuransiTLCResponse" : {
+    "StatusCode" : "00",
+    "Message" : "No Polis berhasil diterima "
+  }
+}]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/TLP/2. other-ins_feedback TLP" time="0.429" classname="Test Cases/TLP/2. other-ins_feedback TLP" status="PASSED">
+         <system-out><![CDATA[2022-06-15 16:21:52 - [TEST_CASE][PASSED] - Test Cases/TLP/2. other-ins_feedback TLP: Test Cases/TLP/2. other-ins_feedback TLP
+
+2022-06-15 16:21:52 - [TEST_STEP][PASSED] - token = sendRequest(findTestObject("TLP/get_credential TLP")): Send request successfully
+
+2022-06-15 16:21:52 - [MESSAGE][INFO] - HAR: /Volumes/Data/app-testing/app-project/other-ins/Reports/20220615_162136/TLP-feedback/20220615_162137/requests/main/12.har
+
+2022-06-15 16:21:52 - [MESSAGE][PASSED] - Send request successfully
+
+2022-06-15 16:21:52 - [TEST_STEP][PASSED] - slurper = new groovy.json.JsonSlurper(): null
+
+2022-06-15 16:21:52 - [TEST_STEP][PASSED] - get_token = slurper.parseText(token.getResponseBodyContent()): null
+
+2022-06-15 16:21:52 - [TEST_STEP][PASSED] - private_token = access_token: null
+
+2022-06-15 16:21:52 - [TEST_STEP][PASSED] - g_token = private_token: null
+
+2022-06-15 16:21:52 - [TEST_STEP][PASSED] - println("token is :" + g_token): null
+
+2022-06-15 16:21:52 - [TEST_STEP][PASSED] - response_token = token.getResponseText(): null
+
+2022-06-15 16:21:52 - [TEST_STEP][PASSED] - logInfo($response_token): 
+            {
+                "token_type": "BearerToken",
+                "access_token": "xSdZR7DAg0oynlY8kPrArJIIzsyr",
+                "expires_in": "1799",
+                "scope": ""
+            }
+        
+
+2022-06-15 16:21:52 - [MESSAGE][INFO] - 
+            {
+                "token_type": "BearerToken",
+                "access_token": "xSdZR7DAg0oynlY8kPrArJIIzsyr",
+                "expires_in": "1799",
+                "scope": ""
+            }
+        
+
+2022-06-15 16:21:52 - [TEST_STEP][PASSED] - feedback = sendRequest(findTestObject("TLP/OtherInsFeedbackTLP", ["token":private_token, "id":id, "maskapai_id":maskapai_id, "source":source, "orderdate":orderdate, "no_reff":accno, "no_polis":no_polis])): Send request successfully
+
+2022-06-15 16:21:52 - [MESSAGE][INFO] - HAR: /Volumes/Data/app-testing/app-project/other-ins/Reports/20220615_162136/TLP-feedback/20220615_162137/requests/main/13.har
+
+2022-06-15 16:21:52 - [MESSAGE][PASSED] - Send request successfully
+
+2022-06-15 16:21:52 - [TEST_STEP][PASSED] - verifyElementPropertyValue(feedback, "SubmitPolisAsuransiTLCResponse.StatusCode", "00", CONTINUE_ON_FAILURE): Verify element property value successfully
+
+2022-06-15 16:21:52 - [MESSAGE][PASSED] - Verify element property value successfully
+
+2022-06-15 16:21:52 - [TEST_STEP][PASSED] - result_feedback = feedback.getResponseText(): null
+
+2022-06-15 16:21:52 - [TEST_STEP][PASSED] - markPassed("order date " + orderdate + " data ke : " + no): order date 2022-04-25 data ke : 8
+
+2022-06-15 16:21:53 - [MESSAGE][PASSED] - order date 2022-04-25 data ke : 8
+
+2022-06-15 16:21:53 - [TEST_STEP][PASSED] - logInfo($result_feedback): {
+  "SubmitPolisAsuransiTLCResponse" : {
+    "StatusCode" : "00",
+    "Message" : "No Polis berhasil diterima "
+  }
+}
+
+2022-06-15 16:21:53 - [MESSAGE][INFO] - {
+  "SubmitPolisAsuransiTLCResponse" : {
+    "StatusCode" : "00",
+    "Message" : "No Polis berhasil diterima "
+  }
+}]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <system-out><![CDATA[2022-06-15 16:21:47 - [TEST_SUITE][PASSED] - TLP-feedback: Test Cases/TLP/2. other-ins_feedback TLP]]></system-out>
+      <system-err><![CDATA[]]></system-err>
+   </testsuite>
+</testsuites>

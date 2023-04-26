@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="TLP-feedback" time="6.649" tests="1" failures="0" errors="0">
+   <testsuite name="TLP-feedback" tests="1" failures="0" errors="0" time="6.649" skipped="0" timestamp="2022-07-14 17:19:16" hostname="User - DESKTOP-7I3I0GG.mshome.net" id="Test Suites/TLP-feedback">
+      <properties>
+         <property name="deviceName" value=""/>
+         <property name="devicePlatform" value=""/>
+         <property name="logFolder" value="C:\\Users\\User\\Katalon Studio\\other-ins\\Reports\\20220714_171906\\TLP-feedback\\20220714_171906"/>
+         <property name="logFiles" value="C:\\Users\\User\\Katalon Studio\\other-ins\\Reports\\20220714_171906\\TLP-feedback\\20220714_171906\\execution0.log"/>
+         <property name="attachments" value=""/>
+         <property name="hostName" value="User - DESKTOP-7I3I0GG.mshome.net"/>
+         <property name="hostAddress" value="192.168.137.217"/>
+         <property name="os" value="Windows 10 64bit"/>
+         <property name="katalonVersion" value="8.1.0.208"/>
+      </properties>
+      <testcase name="Test Cases/TLP/2. other-ins_feedback TLP" time="5.012" classname="Test Cases/TLP/2. other-ins_feedback TLP" status="PASSED">
+         <system-out><![CDATA[2022-07-14 17:19:17 - [TEST_CASE][PASSED] - Test Cases/TLP/2. other-ins_feedback TLP: Test Cases/TLP/2. other-ins_feedback TLP
+
+2022-07-14 17:19:17 - [TEST_STEP][PASSED] - token = sendRequest(findTestObject("TLP/get_credential TLP")): Send request successfully
+
+2022-07-14 17:19:19 - [MESSAGE][INFO] - HAR: C:\Users\User\Katalon Studio\other-ins\Reports\20220714_171906\TLP-feedback\20220714_171906\requests\main\0.har
+
+2022-07-14 17:19:19 - [MESSAGE][PASSED] - Send request successfully
+
+2022-07-14 17:19:19 - [TEST_STEP][PASSED] - slurper = new groovy.json.JsonSlurper(): null
+
+2022-07-14 17:19:19 - [TEST_STEP][PASSED] - get_token = slurper.parseText(token.getResponseBodyContent()): null
+
+2022-07-14 17:19:19 - [TEST_STEP][PASSED] - private_token = access_token: null
+
+2022-07-14 17:19:19 - [TEST_STEP][PASSED] - g_token = private_token: null
+
+2022-07-14 17:19:19 - [TEST_STEP][PASSED] - println("token is :" + g_token): null
+
+2022-07-14 17:19:19 - [TEST_STEP][PASSED] - response_token = token.getResponseText(): null
+
+2022-07-14 17:19:19 - [TEST_STEP][PASSED] - logInfo($response_token): 
+            {
+                "token_type": "BearerToken",
+                "access_token": "0GwFrP8EbOw7qwwxIoIrC1SmrIlf",
+                "expires_in": "1799",
+                "scope": ""
+            }
+        
+
+2022-07-14 17:19:19 - [MESSAGE][INFO] - 
+            {
+                "token_type": "BearerToken",
+                "access_token": "0GwFrP8EbOw7qwwxIoIrC1SmrIlf",
+                "expires_in": "1799",
+                "scope": ""
+            }
+        
+
+2022-07-14 17:19:19 - [TEST_STEP][PASSED] - feedback = sendRequest(findTestObject("TLP/OtherInsFeedbackTLP", ["token":private_token, "id":id, "maskapai_id":maskapai_id, "source":source, "orderdate":orderdate, "no_reff":accno, "no_polis":no_polis])): Send request successfully
+
+2022-07-14 17:19:21 - [MESSAGE][INFO] - HAR: C:\Users\User\Katalon Studio\other-ins\Reports\20220714_171906\TLP-feedback\20220714_171906\requests\main\1.har
+
+2022-07-14 17:19:21 - [MESSAGE][PASSED] - Send request successfully
+
+2022-07-14 17:19:21 - [TEST_STEP][PASSED] - verifyElementPropertyValue(feedback, "SubmitPolisAsuransiTLCResponse.StatusCode", "00", CONTINUE_ON_FAILURE): Verify element property value successfully
+
+2022-07-14 17:19:22 - [MESSAGE][PASSED] - Verify element property value successfully
+
+2022-07-14 17:19:22 - [TEST_STEP][PASSED] - result_feedback = feedback.getResponseText(): null
+
+2022-07-14 17:19:22 - [TEST_STEP][PASSED] - markPassed("order date " + orderdate + " data ke : " + no): order date 2022-07-15 data ke : 1
+
+2022-07-14 17:19:22 - [MESSAGE][PASSED] - order date 2022-07-15 data ke : 1
+
+2022-07-14 17:19:22 - [TEST_STEP][PASSED] - logInfo($result_feedback): {
+  "SubmitPolisAsuransiTLCResponse" : {
+    "StatusCode" : "00",
+    "Message" : "No Polis berhasil diterima "
+  }
+}
+
+2022-07-14 17:19:22 - [MESSAGE][INFO] - {
+  "SubmitPolisAsuransiTLCResponse" : {
+    "StatusCode" : "00",
+    "Message" : "No Polis berhasil diterima "
+  }
+}]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <system-out><![CDATA[2022-07-14 17:19:16 - [TEST_SUITE][PASSED] - TLP-feedback: Test Cases/TLP/2. other-ins_feedback TLP]]></system-out>
+      <system-err><![CDATA[]]></system-err>
+   </testsuite>
+</testsuites>

@@ -1,0 +1,438 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="CPR-feedback" time="3.963" tests="6" failures="0" errors="0">
+   <testsuite name="CPR-feedback" tests="6" failures="0" errors="0" time="3.963" skipped="0" timestamp="2022-06-15 14:50:39" hostname="flavalize - localhost" id="Test Suites/CPR-feedback">
+      <properties>
+         <property name="deviceName" value=""/>
+         <property name="devicePlatform" value=""/>
+         <property name="logFolder" value="/Volumes/Data/app-testing/app-project/other-ins/Reports/20220615_145029/CPR-feedback/20220615_145029"/>
+         <property name="logFiles" value="/Volumes/Data/app-testing/app-project/other-ins/Reports/20220615_145029/CPR-feedback/20220615_145029/execution0.log"/>
+         <property name="attachments" value=""/>
+         <property name="hostName" value="flavalize - localhost"/>
+         <property name="hostAddress" value="127.0.0.1"/>
+         <property name="os" value="Mac OS X 64bit"/>
+         <property name="katalonVersion" value="8.3.0.208"/>
+      </properties>
+      <testcase name="Test Cases/CPR/2. other-ins_feedback CPR" time="1.728" classname="Test Cases/CPR/2. other-ins_feedback CPR" status="PASSED">
+         <system-out><![CDATA[2022-06-15 14:50:39 - [TEST_CASE][PASSED] - Test Cases/CPR/2. other-ins_feedback CPR: Test Cases/CPR/2. other-ins_feedback CPR
+
+2022-06-15 14:50:40 - [TEST_STEP][PASSED] - token = sendRequest(findTestObject("CPR/get_credential_CPR")): Send request successfully
+
+2022-06-15 14:50:41 - [MESSAGE][INFO] - HAR: /Volumes/Data/app-testing/app-project/other-ins/Reports/20220615_145029/CPR-feedback/20220615_145029/requests/main/0.har
+
+2022-06-15 14:50:41 - [MESSAGE][PASSED] - Send request successfully
+
+2022-06-15 14:50:41 - [TEST_STEP][PASSED] - slurper = new groovy.json.JsonSlurper(): null
+
+2022-06-15 14:50:41 - [TEST_STEP][PASSED] - get_token = slurper.parseText(token.getResponseBodyContent()): null
+
+2022-06-15 14:50:41 - [TEST_STEP][PASSED] - private_token = access_token: null
+
+2022-06-15 14:50:41 - [TEST_STEP][PASSED] - g_token = private_token: null
+
+2022-06-15 14:50:41 - [TEST_STEP][PASSED] - println("token is :" + g_token): null
+
+2022-06-15 14:50:41 - [TEST_STEP][PASSED] - response_token = token.getResponseText(): null
+
+2022-06-15 14:50:41 - [TEST_STEP][PASSED] - logInfo($response_token): 
+            {
+                "token_type": "BearerToken",
+                "access_token": "XaZlLbnPU4c4JzZgs8yEKdKKtrEv",
+                "expires_in": "1799",
+                "scope": ""
+            }
+        
+
+2022-06-15 14:50:41 - [MESSAGE][INFO] - 
+            {
+                "token_type": "BearerToken",
+                "access_token": "XaZlLbnPU4c4JzZgs8yEKdKKtrEv",
+                "expires_in": "1799",
+                "scope": ""
+            }
+        
+
+2022-06-15 14:50:41 - [TEST_STEP][PASSED] - feedback = sendRequest(findTestObject("CPR/other-ins-feedback_CPR", ["token":private_token, "id":id, "order_date":order_date, "source":source, "accno":accno, "nopolis":nopolis])): Send request successfully
+
+2022-06-15 14:50:41 - [MESSAGE][INFO] - HAR: /Volumes/Data/app-testing/app-project/other-ins/Reports/20220615_145029/CPR-feedback/20220615_145029/requests/main/1.har
+
+2022-06-15 14:50:41 - [MESSAGE][PASSED] - Send request successfully
+
+2022-06-15 14:50:41 - [TEST_STEP][PASSED] - verifyElementPropertyValue(feedback, "FeedbackOrderInsCarWarrantyRs.StatusCode", "00", CONTINUE_ON_FAILURE): Verify element property value successfully
+
+2022-06-15 14:50:41 - [MESSAGE][PASSED] - Verify element property value successfully
+
+2022-06-15 14:50:41 - [TEST_STEP][PASSED] - result_feedback = feedback.getResponseText(): null
+
+2022-06-15 14:50:41 - [TEST_STEP][PASSED] - markPassed("order date " + order_date + " data ke : " + no): order date 2022-04-25 data ke : 1
+
+2022-06-15 14:50:41 - [MESSAGE][PASSED] - order date 2022-04-25 data ke : 1
+
+2022-06-15 14:50:41 - [TEST_STEP][PASSED] - logInfo($result_feedback): {
+  "FeedbackOrderInsCarWarrantyRs" : {
+    "StatusCode" : "00",
+    "StatusMessage" : "No Polis berhasil diterima"
+  }
+}
+
+2022-06-15 14:50:41 - [MESSAGE][INFO] - {
+  "FeedbackOrderInsCarWarrantyRs" : {
+    "StatusCode" : "00",
+    "StatusMessage" : "No Polis berhasil diterima"
+  }
+}]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/CPR/2. other-ins_feedback CPR" time="0.478" classname="Test Cases/CPR/2. other-ins_feedback CPR" status="PASSED">
+         <system-out><![CDATA[2022-06-15 14:50:41 - [TEST_CASE][PASSED] - Test Cases/CPR/2. other-ins_feedback CPR: Test Cases/CPR/2. other-ins_feedback CPR
+
+2022-06-15 14:50:41 - [TEST_STEP][PASSED] - token = sendRequest(findTestObject("CPR/get_credential_CPR")): Send request successfully
+
+2022-06-15 14:50:41 - [MESSAGE][INFO] - HAR: /Volumes/Data/app-testing/app-project/other-ins/Reports/20220615_145029/CPR-feedback/20220615_145029/requests/main/2.har
+
+2022-06-15 14:50:41 - [MESSAGE][PASSED] - Send request successfully
+
+2022-06-15 14:50:41 - [TEST_STEP][PASSED] - slurper = new groovy.json.JsonSlurper(): null
+
+2022-06-15 14:50:41 - [TEST_STEP][PASSED] - get_token = slurper.parseText(token.getResponseBodyContent()): null
+
+2022-06-15 14:50:41 - [TEST_STEP][PASSED] - private_token = access_token: null
+
+2022-06-15 14:50:41 - [TEST_STEP][PASSED] - g_token = private_token: null
+
+2022-06-15 14:50:41 - [TEST_STEP][PASSED] - println("token is :" + g_token): null
+
+2022-06-15 14:50:41 - [TEST_STEP][PASSED] - response_token = token.getResponseText(): null
+
+2022-06-15 14:50:41 - [TEST_STEP][PASSED] - logInfo($response_token): 
+            {
+                "token_type": "BearerToken",
+                "access_token": "rX9TNiffbWT0agvpJbFZWZHUJWch",
+                "expires_in": "1799",
+                "scope": ""
+            }
+        
+
+2022-06-15 14:50:41 - [MESSAGE][INFO] - 
+            {
+                "token_type": "BearerToken",
+                "access_token": "rX9TNiffbWT0agvpJbFZWZHUJWch",
+                "expires_in": "1799",
+                "scope": ""
+            }
+        
+
+2022-06-15 14:50:41 - [TEST_STEP][PASSED] - feedback = sendRequest(findTestObject("CPR/other-ins-feedback_CPR", ["token":private_token, "id":id, "order_date":order_date, "source":source, "accno":accno, "nopolis":nopolis])): Send request successfully
+
+2022-06-15 14:50:42 - [MESSAGE][INFO] - HAR: /Volumes/Data/app-testing/app-project/other-ins/Reports/20220615_145029/CPR-feedback/20220615_145029/requests/main/3.har
+
+2022-06-15 14:50:42 - [MESSAGE][PASSED] - Send request successfully
+
+2022-06-15 14:50:42 - [TEST_STEP][PASSED] - verifyElementPropertyValue(feedback, "FeedbackOrderInsCarWarrantyRs.StatusCode", "00", CONTINUE_ON_FAILURE): Verify element property value successfully
+
+2022-06-15 14:50:42 - [MESSAGE][PASSED] - Verify element property value successfully
+
+2022-06-15 14:50:42 - [TEST_STEP][PASSED] - result_feedback = feedback.getResponseText(): null
+
+2022-06-15 14:50:42 - [TEST_STEP][PASSED] - markPassed("order date " + order_date + " data ke : " + no): order date 2022-04-25 data ke : 2
+
+2022-06-15 14:50:42 - [MESSAGE][PASSED] - order date 2022-04-25 data ke : 2
+
+2022-06-15 14:50:42 - [TEST_STEP][PASSED] - logInfo($result_feedback): {
+  "FeedbackOrderInsCarWarrantyRs" : {
+    "StatusCode" : "00",
+    "StatusMessage" : "No Polis berhasil diterima"
+  }
+}
+
+2022-06-15 14:50:42 - [MESSAGE][INFO] - {
+  "FeedbackOrderInsCarWarrantyRs" : {
+    "StatusCode" : "00",
+    "StatusMessage" : "No Polis berhasil diterima"
+  }
+}]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/CPR/2. other-ins_feedback CPR" time="0.448" classname="Test Cases/CPR/2. other-ins_feedback CPR" status="PASSED">
+         <system-out><![CDATA[2022-06-15 14:50:42 - [TEST_CASE][PASSED] - Test Cases/CPR/2. other-ins_feedback CPR: Test Cases/CPR/2. other-ins_feedback CPR
+
+2022-06-15 14:50:42 - [TEST_STEP][PASSED] - token = sendRequest(findTestObject("CPR/get_credential_CPR")): Send request successfully
+
+2022-06-15 14:50:42 - [MESSAGE][INFO] - HAR: /Volumes/Data/app-testing/app-project/other-ins/Reports/20220615_145029/CPR-feedback/20220615_145029/requests/main/4.har
+
+2022-06-15 14:50:42 - [MESSAGE][PASSED] - Send request successfully
+
+2022-06-15 14:50:42 - [TEST_STEP][PASSED] - slurper = new groovy.json.JsonSlurper(): null
+
+2022-06-15 14:50:42 - [TEST_STEP][PASSED] - get_token = slurper.parseText(token.getResponseBodyContent()): null
+
+2022-06-15 14:50:42 - [TEST_STEP][PASSED] - private_token = access_token: null
+
+2022-06-15 14:50:42 - [TEST_STEP][PASSED] - g_token = private_token: null
+
+2022-06-15 14:50:42 - [TEST_STEP][PASSED] - println("token is :" + g_token): null
+
+2022-06-15 14:50:42 - [TEST_STEP][PASSED] - response_token = token.getResponseText(): null
+
+2022-06-15 14:50:42 - [TEST_STEP][PASSED] - logInfo($response_token): 
+            {
+                "token_type": "BearerToken",
+                "access_token": "HhthCj1BXSHUijaWCHp4RKxMvbAW",
+                "expires_in": "1799",
+                "scope": ""
+            }
+        
+
+2022-06-15 14:50:42 - [MESSAGE][INFO] - 
+            {
+                "token_type": "BearerToken",
+                "access_token": "HhthCj1BXSHUijaWCHp4RKxMvbAW",
+                "expires_in": "1799",
+                "scope": ""
+            }
+        
+
+2022-06-15 14:50:42 - [TEST_STEP][PASSED] - feedback = sendRequest(findTestObject("CPR/other-ins-feedback_CPR", ["token":private_token, "id":id, "order_date":order_date, "source":source, "accno":accno, "nopolis":nopolis])): Send request successfully
+
+2022-06-15 14:50:42 - [MESSAGE][INFO] - HAR: /Volumes/Data/app-testing/app-project/other-ins/Reports/20220615_145029/CPR-feedback/20220615_145029/requests/main/5.har
+
+2022-06-15 14:50:42 - [MESSAGE][PASSED] - Send request successfully
+
+2022-06-15 14:50:42 - [TEST_STEP][PASSED] - verifyElementPropertyValue(feedback, "FeedbackOrderInsCarWarrantyRs.StatusCode", "00", CONTINUE_ON_FAILURE): Verify element property value successfully
+
+2022-06-15 14:50:42 - [MESSAGE][PASSED] - Verify element property value successfully
+
+2022-06-15 14:50:42 - [TEST_STEP][PASSED] - result_feedback = feedback.getResponseText(): null
+
+2022-06-15 14:50:42 - [TEST_STEP][PASSED] - markPassed("order date " + order_date + " data ke : " + no): order date 2022-04-25 data ke : 3
+
+2022-06-15 14:50:42 - [MESSAGE][PASSED] - order date 2022-04-25 data ke : 3
+
+2022-06-15 14:50:42 - [TEST_STEP][PASSED] - logInfo($result_feedback): {
+  "FeedbackOrderInsCarWarrantyRs" : {
+    "StatusCode" : "00",
+    "StatusMessage" : "No Polis berhasil diterima"
+  }
+}
+
+2022-06-15 14:50:42 - [MESSAGE][INFO] - {
+  "FeedbackOrderInsCarWarrantyRs" : {
+    "StatusCode" : "00",
+    "StatusMessage" : "No Polis berhasil diterima"
+  }
+}]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/CPR/2. other-ins_feedback CPR" time="0.308" classname="Test Cases/CPR/2. other-ins_feedback CPR" status="PASSED">
+         <system-out><![CDATA[2022-06-15 14:50:42 - [TEST_CASE][PASSED] - Test Cases/CPR/2. other-ins_feedback CPR: Test Cases/CPR/2. other-ins_feedback CPR
+
+2022-06-15 14:50:42 - [TEST_STEP][PASSED] - token = sendRequest(findTestObject("CPR/get_credential_CPR")): Send request successfully
+
+2022-06-15 14:50:42 - [MESSAGE][INFO] - HAR: /Volumes/Data/app-testing/app-project/other-ins/Reports/20220615_145029/CPR-feedback/20220615_145029/requests/main/6.har
+
+2022-06-15 14:50:42 - [MESSAGE][PASSED] - Send request successfully
+
+2022-06-15 14:50:42 - [TEST_STEP][PASSED] - slurper = new groovy.json.JsonSlurper(): null
+
+2022-06-15 14:50:42 - [TEST_STEP][PASSED] - get_token = slurper.parseText(token.getResponseBodyContent()): null
+
+2022-06-15 14:50:42 - [TEST_STEP][PASSED] - private_token = access_token: null
+
+2022-06-15 14:50:42 - [TEST_STEP][PASSED] - g_token = private_token: null
+
+2022-06-15 14:50:42 - [TEST_STEP][PASSED] - println("token is :" + g_token): null
+
+2022-06-15 14:50:42 - [TEST_STEP][PASSED] - response_token = token.getResponseText(): null
+
+2022-06-15 14:50:42 - [TEST_STEP][PASSED] - logInfo($response_token): 
+            {
+                "token_type": "BearerToken",
+                "access_token": "TbINtAOZdwUzT3VudkvDJQ87xKtb",
+                "expires_in": "1799",
+                "scope": ""
+            }
+        
+
+2022-06-15 14:50:42 - [MESSAGE][INFO] - 
+            {
+                "token_type": "BearerToken",
+                "access_token": "TbINtAOZdwUzT3VudkvDJQ87xKtb",
+                "expires_in": "1799",
+                "scope": ""
+            }
+        
+
+2022-06-15 14:50:42 - [TEST_STEP][PASSED] - feedback = sendRequest(findTestObject("CPR/other-ins-feedback_CPR", ["token":private_token, "id":id, "order_date":order_date, "source":source, "accno":accno, "nopolis":nopolis])): Send request successfully
+
+2022-06-15 14:50:42 - [MESSAGE][INFO] - HAR: /Volumes/Data/app-testing/app-project/other-ins/Reports/20220615_145029/CPR-feedback/20220615_145029/requests/main/7.har
+
+2022-06-15 14:50:42 - [MESSAGE][PASSED] - Send request successfully
+
+2022-06-15 14:50:42 - [TEST_STEP][PASSED] - verifyElementPropertyValue(feedback, "FeedbackOrderInsCarWarrantyRs.StatusCode", "00", CONTINUE_ON_FAILURE): Verify element property value successfully
+
+2022-06-15 14:50:42 - [MESSAGE][PASSED] - Verify element property value successfully
+
+2022-06-15 14:50:42 - [TEST_STEP][PASSED] - result_feedback = feedback.getResponseText(): null
+
+2022-06-15 14:50:42 - [TEST_STEP][PASSED] - markPassed("order date " + order_date + " data ke : " + no): order date 2022-04-25 data ke : 4
+
+2022-06-15 14:50:42 - [MESSAGE][PASSED] - order date 2022-04-25 data ke : 4
+
+2022-06-15 14:50:42 - [TEST_STEP][PASSED] - logInfo($result_feedback): {
+  "FeedbackOrderInsCarWarrantyRs" : {
+    "StatusCode" : "00",
+    "StatusMessage" : "No Polis berhasil diterima"
+  }
+}
+
+2022-06-15 14:50:42 - [MESSAGE][INFO] - {
+  "FeedbackOrderInsCarWarrantyRs" : {
+    "StatusCode" : "00",
+    "StatusMessage" : "No Polis berhasil diterima"
+  }
+}]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/CPR/2. other-ins_feedback CPR" time="0.318" classname="Test Cases/CPR/2. other-ins_feedback CPR" status="PASSED">
+         <system-out><![CDATA[2022-06-15 14:50:42 - [TEST_CASE][PASSED] - Test Cases/CPR/2. other-ins_feedback CPR: Test Cases/CPR/2. other-ins_feedback CPR
+
+2022-06-15 14:50:42 - [TEST_STEP][PASSED] - token = sendRequest(findTestObject("CPR/get_credential_CPR")): Send request successfully
+
+2022-06-15 14:50:43 - [MESSAGE][INFO] - HAR: /Volumes/Data/app-testing/app-project/other-ins/Reports/20220615_145029/CPR-feedback/20220615_145029/requests/main/8.har
+
+2022-06-15 14:50:43 - [MESSAGE][PASSED] - Send request successfully
+
+2022-06-15 14:50:43 - [TEST_STEP][PASSED] - slurper = new groovy.json.JsonSlurper(): null
+
+2022-06-15 14:50:43 - [TEST_STEP][PASSED] - get_token = slurper.parseText(token.getResponseBodyContent()): null
+
+2022-06-15 14:50:43 - [TEST_STEP][PASSED] - private_token = access_token: null
+
+2022-06-15 14:50:43 - [TEST_STEP][PASSED] - g_token = private_token: null
+
+2022-06-15 14:50:43 - [TEST_STEP][PASSED] - println("token is :" + g_token): null
+
+2022-06-15 14:50:43 - [TEST_STEP][PASSED] - response_token = token.getResponseText(): null
+
+2022-06-15 14:50:43 - [TEST_STEP][PASSED] - logInfo($response_token): 
+            {
+                "token_type": "BearerToken",
+                "access_token": "DpIyGnhJuwCLKtjZom2QOLyBgI6o",
+                "expires_in": "1799",
+                "scope": ""
+            }
+        
+
+2022-06-15 14:50:43 - [MESSAGE][INFO] - 
+            {
+                "token_type": "BearerToken",
+                "access_token": "DpIyGnhJuwCLKtjZom2QOLyBgI6o",
+                "expires_in": "1799",
+                "scope": ""
+            }
+        
+
+2022-06-15 14:50:43 - [TEST_STEP][PASSED] - feedback = sendRequest(findTestObject("CPR/other-ins-feedback_CPR", ["token":private_token, "id":id, "order_date":order_date, "source":source, "accno":accno, "nopolis":nopolis])): Send request successfully
+
+2022-06-15 14:50:43 - [MESSAGE][INFO] - HAR: /Volumes/Data/app-testing/app-project/other-ins/Reports/20220615_145029/CPR-feedback/20220615_145029/requests/main/9.har
+
+2022-06-15 14:50:43 - [MESSAGE][PASSED] - Send request successfully
+
+2022-06-15 14:50:43 - [TEST_STEP][PASSED] - verifyElementPropertyValue(feedback, "FeedbackOrderInsCarWarrantyRs.StatusCode", "00", CONTINUE_ON_FAILURE): Verify element property value successfully
+
+2022-06-15 14:50:43 - [MESSAGE][PASSED] - Verify element property value successfully
+
+2022-06-15 14:50:43 - [TEST_STEP][PASSED] - result_feedback = feedback.getResponseText(): null
+
+2022-06-15 14:50:43 - [TEST_STEP][PASSED] - markPassed("order date " + order_date + " data ke : " + no): order date 2022-04-25 data ke : 5
+
+2022-06-15 14:50:43 - [MESSAGE][PASSED] - order date 2022-04-25 data ke : 5
+
+2022-06-15 14:50:43 - [TEST_STEP][PASSED] - logInfo($result_feedback): {
+  "FeedbackOrderInsCarWarrantyRs" : {
+    "StatusCode" : "00",
+    "StatusMessage" : "No Polis berhasil diterima"
+  }
+}
+
+2022-06-15 14:50:43 - [MESSAGE][INFO] - {
+  "FeedbackOrderInsCarWarrantyRs" : {
+    "StatusCode" : "00",
+    "StatusMessage" : "No Polis berhasil diterima"
+  }
+}]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/CPR/2. other-ins_feedback CPR" time="0.318" classname="Test Cases/CPR/2. other-ins_feedback CPR" status="PASSED">
+         <system-out><![CDATA[2022-06-15 14:50:43 - [TEST_CASE][PASSED] - Test Cases/CPR/2. other-ins_feedback CPR: Test Cases/CPR/2. other-ins_feedback CPR
+
+2022-06-15 14:50:43 - [TEST_STEP][PASSED] - token = sendRequest(findTestObject("CPR/get_credential_CPR")): Send request successfully
+
+2022-06-15 14:50:43 - [MESSAGE][INFO] - HAR: /Volumes/Data/app-testing/app-project/other-ins/Reports/20220615_145029/CPR-feedback/20220615_145029/requests/main/10.har
+
+2022-06-15 14:50:43 - [MESSAGE][PASSED] - Send request successfully
+
+2022-06-15 14:50:43 - [TEST_STEP][PASSED] - slurper = new groovy.json.JsonSlurper(): null
+
+2022-06-15 14:50:43 - [TEST_STEP][PASSED] - get_token = slurper.parseText(token.getResponseBodyContent()): null
+
+2022-06-15 14:50:43 - [TEST_STEP][PASSED] - private_token = access_token: null
+
+2022-06-15 14:50:43 - [TEST_STEP][PASSED] - g_token = private_token: null
+
+2022-06-15 14:50:43 - [TEST_STEP][PASSED] - println("token is :" + g_token): null
+
+2022-06-15 14:50:43 - [TEST_STEP][PASSED] - response_token = token.getResponseText(): null
+
+2022-06-15 14:50:43 - [TEST_STEP][PASSED] - logInfo($response_token): 
+            {
+                "token_type": "BearerToken",
+                "access_token": "a7zT0JbRS98huNBfM9q4Sp12UInZ",
+                "expires_in": "1799",
+                "scope": ""
+            }
+        
+
+2022-06-15 14:50:43 - [MESSAGE][INFO] - 
+            {
+                "token_type": "BearerToken",
+                "access_token": "a7zT0JbRS98huNBfM9q4Sp12UInZ",
+                "expires_in": "1799",
+                "scope": ""
+            }
+        
+
+2022-06-15 14:50:43 - [TEST_STEP][PASSED] - feedback = sendRequest(findTestObject("CPR/other-ins-feedback_CPR", ["token":private_token, "id":id, "order_date":order_date, "source":source, "accno":accno, "nopolis":nopolis])): Send request successfully
+
+2022-06-15 14:50:43 - [MESSAGE][INFO] - HAR: /Volumes/Data/app-testing/app-project/other-ins/Reports/20220615_145029/CPR-feedback/20220615_145029/requests/main/11.har
+
+2022-06-15 14:50:43 - [MESSAGE][PASSED] - Send request successfully
+
+2022-06-15 14:50:43 - [TEST_STEP][PASSED] - verifyElementPropertyValue(feedback, "FeedbackOrderInsCarWarrantyRs.StatusCode", "00", CONTINUE_ON_FAILURE): Verify element property value successfully
+
+2022-06-15 14:50:43 - [MESSAGE][PASSED] - Verify element property value successfully
+
+2022-06-15 14:50:43 - [TEST_STEP][PASSED] - result_feedback = feedback.getResponseText(): null
+
+2022-06-15 14:50:43 - [TEST_STEP][PASSED] - markPassed("order date " + order_date + " data ke : " + no): order date 2022-04-25 data ke : 6
+
+2022-06-15 14:50:43 - [MESSAGE][PASSED] - order date 2022-04-25 data ke : 6
+
+2022-06-15 14:50:43 - [TEST_STEP][PASSED] - logInfo($result_feedback): {
+  "FeedbackOrderInsCarWarrantyRs" : {
+    "StatusCode" : "00",
+    "StatusMessage" : "No Polis berhasil diterima"
+  }
+}
+
+2022-06-15 14:50:43 - [MESSAGE][INFO] - {
+  "FeedbackOrderInsCarWarrantyRs" : {
+    "StatusCode" : "00",
+    "StatusMessage" : "No Polis berhasil diterima"
+  }
+}]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <system-out><![CDATA[2022-06-15 14:50:39 - [TEST_SUITE][PASSED] - CPR-feedback: Test Cases/CPR/2. other-ins_feedback CPR]]></system-out>
+      <system-err><![CDATA[]]></system-err>
+   </testsuite>
+</testsuites>

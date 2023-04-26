@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="CPR-order" time="8.336" tests="1" failures="0" errors="0">
+   <testsuite name="CPR-order" tests="1" failures="0" errors="0" time="8.336" skipped="0" timestamp="2022-07-19 09:48:11" hostname="User - DESKTOP-7I3I0GG" id="Test Suites/CPR-order">
+      <properties>
+         <property name="deviceName" value=""/>
+         <property name="devicePlatform" value=""/>
+         <property name="logFolder" value="C:\\Users\\User\\Katalon Studio\\other-ins\\Reports\\20220719_094758\\CPR-order\\20220719_094758"/>
+         <property name="logFiles" value="C:\\Users\\User\\Katalon Studio\\other-ins\\Reports\\20220719_094758\\CPR-order\\20220719_094758\\execution0.log"/>
+         <property name="attachments" value=""/>
+         <property name="hostName" value="User - DESKTOP-7I3I0GG"/>
+         <property name="hostAddress" value="192.168.250.7"/>
+         <property name="os" value="Windows 10 64bit"/>
+         <property name="katalonVersion" value="8.1.0.208"/>
+      </properties>
+      <testcase name="Test Cases/CPR/1. other-ins_order CPR" time="7.021" classname="Test Cases/CPR/1. other-ins_order CPR" status="PASSED">
+         <system-out><![CDATA[2022-07-19 09:48:12 - [TEST_CASE][PASSED] - Test Cases/CPR/1. other-ins_order CPR: Test Cases/CPR/1. other-ins_order CPR
+
+2022-07-19 09:48:12 - [TEST_STEP][PASSED] - token = sendRequest(findTestObject("CPR/get_credential_CPR")): Send request successfully
+
+2022-07-19 09:48:16 - [MESSAGE][INFO] - HAR: C:\Users\User\Katalon Studio\other-ins\Reports\20220719_094758\CPR-order\20220719_094758\requests\main\0.har
+
+2022-07-19 09:48:16 - [MESSAGE][PASSED] - Send request successfully
+
+2022-07-19 09:48:16 - [TEST_STEP][PASSED] - slurper = new groovy.json.JsonSlurper(): null
+
+2022-07-19 09:48:16 - [TEST_STEP][PASSED] - get_token = slurper.parseText(token.getResponseBodyContent()): null
+
+2022-07-19 09:48:16 - [TEST_STEP][PASSED] - private_token = access_token: null
+
+2022-07-19 09:48:16 - [TEST_STEP][PASSED] - g_token = private_token: null
+
+2022-07-19 09:48:16 - [TEST_STEP][PASSED] - println("token is :" + g_token): null
+
+2022-07-19 09:48:16 - [TEST_STEP][PASSED] - response_token = token.getResponseText(): null
+
+2022-07-19 09:48:16 - [TEST_STEP][PASSED] - logInfo($response_token): 
+            {
+                "token_type": "BearerToken",
+                "access_token": "aBxphttu9iACsXBJZ9M6GuT2hKQl",
+                "expires_in": "1799",
+                "scope": ""
+            }
+        
+
+2022-07-19 09:48:16 - [MESSAGE][INFO] - 
+            {
+                "token_type": "BearerToken",
+                "access_token": "aBxphttu9iACsXBJZ9M6GuT2hKQl",
+                "expires_in": "1799",
+                "scope": ""
+            }
+        
+
+2022-07-19 09:48:16 - [TEST_STEP][PASSED] - order = sendRequest(findTestObject("CPR/other-ins-order_CPR", ["token":private_token, "id":id, "order_date":order_date, "source":source])): Send request successfully
+
+2022-07-19 09:48:19 - [MESSAGE][INFO] - HAR: C:\Users\User\Katalon Studio\other-ins\Reports\20220719_094758\CPR-order\20220719_094758\requests\main\1.har
+
+2022-07-19 09:48:19 - [MESSAGE][PASSED] - Send request successfully
+
+2022-07-19 09:48:19 - [TEST_STEP][PASSED] - get_order = order.getResponseText(): null
+
+2022-07-19 09:48:19 - [TEST_STEP][PASSED] - logInfo($get_order): {
+  "OrderInsCarSmartWarrantyRs" : {
+    "ResponseHeader" : {
+      "StatusCode" : "00",
+      "StatusMessage" : "Success",
+      "CurrentPage" : "1",
+      "TotalPage" : "1",
+      "TotalData" : "1"
+    },
+    "ListData" : {
+      "DataKonsumen" : [ {
+        "NoKontrak" : "9490712660001",
+        "NamaKonsumen" : "HPHP",
+        "Address" : "LDLD",
+        "Kelurahan" : "LDLD",
+        "Kecamatan" : "LDLD",
+        "Kabupaten" : "LDLD",
+        "Provinsi" : "LDLD",
+        "PostalCode" : "88271",
+        "StartPolisDate" : "2022-07-17",
+        "EndPolisDate" : "2023-07-17",
+        "Merk" : "TOYOTA",
+        "Type" : "ALTIS 1.8 E MT",
+        "CarYear" : "2022",
+        "NoRangka" : "67",
+        "NoMesin" : "65",
+        "Colour" : "HITAM",
+        "NoPolisi" : "",
+        "Kind" : "Passenger Vehicle",
+        "Fuel" : "Bensin",
+        "NIK" : "9999999999111111",
+        "NPWP" : "000009999988888"
+      } ]
+    }
+  }
+}
+
+2022-07-19 09:48:19 - [MESSAGE][INFO] - {
+  "OrderInsCarSmartWarrantyRs" : {
+    "ResponseHeader" : {
+      "StatusCode" : "00",
+      "StatusMessage" : "Success",
+      "CurrentPage" : "1",
+      "TotalPage" : "1",
+      "TotalData" : "1"
+    },
+    "ListData" : {
+      "DataKonsumen" : [ {
+        "NoKontrak" : "9490712660001",
+        "NamaKonsumen" : "HPHP",
+        "Address" : "LDLD",
+        "Kelurahan" : "LDLD",
+        "Kecamatan" : "LDLD",
+        "Kabupaten" : "LDLD",
+        "Provinsi" : "LDLD",
+        "PostalCode" : "88271",
+        "StartPolisDate" : "2022-07-17",
+        "EndPolisDate" : "2023-07-17",
+        "Merk" : "TOYOTA",
+        "Type" : "ALTIS 1.8 E MT",
+        "CarYear" : "2022",
+        "NoRangka" : "67",
+        "NoMesin" : "65",
+        "Colour" : "HITAM",
+        "NoPolisi" : "",
+        "Kind" : "Passenger Vehicle",
+        "Fuel" : "Bensin",
+        "NIK" : "9999999999111111",
+        "NPWP" : "000009999988888"
+      } ]
+    }
+  }
+}]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <system-out><![CDATA[2022-07-19 09:48:11 - [TEST_SUITE][PASSED] - CPR-order: Test Cases/CPR/1. other-ins_order CPR]]></system-out>
+      <system-err><![CDATA[]]></system-err>
+   </testsuite>
+</testsuites>

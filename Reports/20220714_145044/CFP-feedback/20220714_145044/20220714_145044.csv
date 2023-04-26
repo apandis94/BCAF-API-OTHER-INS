@@ -1,0 +1,32 @@
+Suite/Test/Step Name,Browser,Description,Tag,Start time,End time,Duration,Status
+CFP-feedback,,,,2022-07-14 14:50:57,2022-07-14 14:51:05,7.706s,PASSED
+,,,,,,,
+Test Cases/CFP/2. other-ins_feedback CFP,,,,2022-07-14 14:50:57,2022-07-14 14:51:04,6.220s,PASSED
+"token = sendRequest(findTestObject(""CFP/credential CFP""))",,,,2022-07-14 14:50:58,2022-07-14 14:51:01,2.685s,PASSED
+slurper = new groovy.json.JsonSlurper(),,store json response to variable,,2022-07-14 14:51:01,2022-07-14 14:51:01,0.020s,PASSED
+get_token = slurper.parseText(token.getResponseBodyContent()),,,,2022-07-14 14:51:01,2022-07-14 14:51:01,0.039s,PASSED
+private_token = access_token,,define / field api,,2022-07-14 14:51:01,2022-07-14 14:51:01,0.019s,PASSED
+g_token = private_token,,store var to global variable,,2022-07-14 14:51:01,2022-07-14 14:51:01,0.172s,PASSED
+"println(""token is :"" + g_token)",,,,2022-07-14 14:51:01,2022-07-14 14:51:01,0.008s,PASSED
+response_token = token.getResponseText(),,show response to report in test suite,,2022-07-14 14:51:01,2022-07-14 14:51:01,0.002s,PASSED
+logInfo($response_token),,,,2022-07-14 14:51:01,2022-07-14 14:51:01,0.069s,PASSED
+"feedback = sendRequest(findTestObject(""CFP/feedbackCFP"", [""token"":private_token, ""norangka"":norangka, ""nokontrak"":accno, ""noimei"":noimei, ""nogsm"":nogsm, ""username"":id]))",,,,2022-07-14 14:51:01,2022-07-14 14:51:04,2.323s,PASSED
+"verifyElementPropertyValue(feedback, ""MessageCode"", ""000"", CONTINUE_ON_FAILURE)",,,,2022-07-14 14:51:04,2022-07-14 14:51:04,0.065s,PASSED
+result_feedback = feedback.getResponseText(),,show response to report in test suite,,2022-07-14 14:51:04,2022-07-14 14:51:04,0.001s,PASSED
+"markPassed(""accno : "" + accno + "" data ke : "" + no)",,,,2022-07-14 14:51:04,2022-07-14 14:51:04,0.007s,PASSED
+logInfo($result_feedback),,,,2022-07-14 14:51:04,2022-07-14 14:51:04,0.001s,PASSED
+,,,,,,,
+Test Cases/CFP/2. other-ins_feedback CFP,,,,2022-07-14 14:51:04,2022-07-14 14:51:05,0.901s,PASSED
+"token = sendRequest(findTestObject(""CFP/credential CFP""))",,,,2022-07-14 14:51:04,2022-07-14 14:51:04,0.239s,PASSED
+slurper = new groovy.json.JsonSlurper(),,store json response to variable,,2022-07-14 14:51:04,2022-07-14 14:51:04,0.001s,PASSED
+get_token = slurper.parseText(token.getResponseBodyContent()),,,,2022-07-14 14:51:04,2022-07-14 14:51:04,0.001s,PASSED
+private_token = access_token,,define / field api,,2022-07-14 14:51:04,2022-07-14 14:51:04,0.001s,PASSED
+g_token = private_token,,store var to global variable,,2022-07-14 14:51:04,2022-07-14 14:51:04,0.001s,PASSED
+"println(""token is :"" + g_token)",,,,2022-07-14 14:51:04,2022-07-14 14:51:04,0.001s,PASSED
+response_token = token.getResponseText(),,show response to report in test suite,,2022-07-14 14:51:04,2022-07-14 14:51:04,0.001s,PASSED
+logInfo($response_token),,,,2022-07-14 14:51:04,2022-07-14 14:51:04,0.002s,PASSED
+"feedback = sendRequest(findTestObject(""CFP/feedbackCFP"", [""token"":private_token, ""norangka"":norangka, ""nokontrak"":accno, ""noimei"":noimei, ""nogsm"":nogsm, ""username"":id]))",,,,2022-07-14 14:51:04,2022-07-14 14:51:05,0.533s,PASSED
+"verifyElementPropertyValue(feedback, ""MessageCode"", ""000"", CONTINUE_ON_FAILURE)",,,,2022-07-14 14:51:05,2022-07-14 14:51:05,0.073s,PASSED
+result_feedback = feedback.getResponseText(),,show response to report in test suite,,2022-07-14 14:51:05,2022-07-14 14:51:05,0.001s,PASSED
+"markPassed(""accno : "" + accno + "" data ke : "" + no)",,,,2022-07-14 14:51:05,2022-07-14 14:51:05,0.002s,PASSED
+logInfo($result_feedback),,,,2022-07-14 14:51:05,2022-07-14 14:51:05,0.002s,PASSED

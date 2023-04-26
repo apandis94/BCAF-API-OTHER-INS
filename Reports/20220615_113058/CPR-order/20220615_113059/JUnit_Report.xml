@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="CPR-order" time="1.723" tests="1" failures="0" errors="0">
+   <testsuite name="CPR-order" tests="1" failures="0" errors="0" time="1.723" skipped="0" timestamp="2022-06-15 11:31:12" hostname="flavalize - localhost" id="Test Suites/CPR-order">
+      <properties>
+         <property name="deviceName" value=""/>
+         <property name="devicePlatform" value=""/>
+         <property name="logFolder" value="/Volumes/Data/app-testing/app-project/other-ins/Reports/20220615_113058/CPR-order/20220615_113059"/>
+         <property name="logFiles" value="/Volumes/Data/app-testing/app-project/other-ins/Reports/20220615_113058/CPR-order/20220615_113059/execution0.log"/>
+         <property name="attachments" value=""/>
+         <property name="hostName" value="flavalize - localhost"/>
+         <property name="hostAddress" value="127.0.0.1"/>
+         <property name="os" value="Mac OS X 64bit"/>
+         <property name="katalonVersion" value="8.3.0.208"/>
+      </properties>
+      <testcase name="Test Cases/CPR/1. other-ins_order CPR" time="1.525" classname="Test Cases/CPR/1. other-ins_order CPR" status="PASSED">
+         <system-out><![CDATA[2022-06-15 11:31:12 - [TEST_CASE][PASSED] - Test Cases/CPR/1. other-ins_order CPR: Test Cases/CPR/1. other-ins_order CPR
+
+2022-06-15 11:31:12 - [TEST_STEP][PASSED] - token = sendRequest(findTestObject("CPR/get_credential_CPR")): Send request successfully
+
+2022-06-15 11:31:13 - [MESSAGE][INFO] - HAR: /Volumes/Data/app-testing/app-project/other-ins/Reports/20220615_113058/CPR-order/20220615_113059/requests/main/0.har
+
+2022-06-15 11:31:13 - [MESSAGE][PASSED] - Send request successfully
+
+2022-06-15 11:31:13 - [TEST_STEP][PASSED] - slurper = new groovy.json.JsonSlurper(): null
+
+2022-06-15 11:31:13 - [TEST_STEP][PASSED] - get_token = slurper.parseText(token.getResponseBodyContent()): null
+
+2022-06-15 11:31:13 - [TEST_STEP][PASSED] - private_token = access_token: null
+
+2022-06-15 11:31:13 - [TEST_STEP][PASSED] - g_token = private_token: null
+
+2022-06-15 11:31:13 - [TEST_STEP][PASSED] - println("token is :" + g_token): null
+
+2022-06-15 11:31:13 - [TEST_STEP][PASSED] - response_token = token.getResponseText(): null
+
+2022-06-15 11:31:13 - [TEST_STEP][PASSED] - logInfo($response_token): 
+            {
+                "token_type": "BearerToken",
+                "access_token": "Gq7E0zhARAvbOVPrn6fwYQpiZ4m0",
+                "expires_in": "1799",
+                "scope": ""
+            }
+        
+
+2022-06-15 11:31:13 - [MESSAGE][INFO] - 
+            {
+                "token_type": "BearerToken",
+                "access_token": "Gq7E0zhARAvbOVPrn6fwYQpiZ4m0",
+                "expires_in": "1799",
+                "scope": ""
+            }
+        
+
+2022-06-15 11:31:13 - [TEST_STEP][PASSED] - order = sendRequest(findTestObject("CPR/other-ins-order_CPR", ["token":private_token, "id":id, "order_date":order_date, "source":source])): Send request successfully
+
+2022-06-15 11:31:14 - [MESSAGE][INFO] - HAR: /Volumes/Data/app-testing/app-project/other-ins/Reports/20220615_113058/CPR-order/20220615_113059/requests/main/1.har
+
+2022-06-15 11:31:14 - [MESSAGE][PASSED] - Send request successfully
+
+2022-06-15 11:31:14 - [TEST_STEP][PASSED] - get_order = order.getResponseText(): null
+
+2022-06-15 11:31:14 - [TEST_STEP][PASSED] - logInfo($get_order): {
+  "OrderInsCarSmartWarrantyRs" : {
+    "ResponseHeader" : {
+      "StatusCode" : "00",
+      "StatusMessage" : "Success",
+      "CurrentPage" : "1",
+      "TotalPage" : "1",
+      "TotalData" : "1"
+    },
+    "ListData" : {
+      "DataKonsumen" : [ {
+        "NoKontrak" : "9560715104001",
+        "NamaKonsumen" : "BUDI SUDAR",
+        "Address" : "Bekasi Jaya Regency A2 A112",
+        "Kelurahan" : "Tambun Utara",
+        "Kecamatan" : "Tambun Utara",
+        "Kabupaten" : "Bekasi",
+        "Provinsi" : "Jawa Barat",
+        "PostalCode" : "17510",
+        "StartPolisDate" : "2022-06-14",
+        "EndPolisDate" : "2025-06-14",
+        "Merk" : "TOYOTA",
+        "Type" : "ALL NEW KIJANG INNOVA 2.0 V AT",
+        "CarYear" : "2022",
+        "NoRangka" : "8097GGBJK",
+        "NoMesin" : "9780809JKHKJ",
+        "Colour" : "Putih",
+        "NoPolisi" : "",
+        "Kind" : "Passenger Vehicle",
+        "Fuel" : "Bensin",
+        "NIK" : "1457856236590002",
+        "NPWP" : "125423620254565"
+      } ]
+    }
+  }
+}
+
+2022-06-15 11:31:14 - [MESSAGE][INFO] - {
+  "OrderInsCarSmartWarrantyRs" : {
+    "ResponseHeader" : {
+      "StatusCode" : "00",
+      "StatusMessage" : "Success",
+      "CurrentPage" : "1",
+      "TotalPage" : "1",
+      "TotalData" : "1"
+    },
+    "ListData" : {
+      "DataKonsumen" : [ {
+        "NoKontrak" : "9560715104001",
+        "NamaKonsumen" : "BUDI SUDAR",
+        "Address" : "Bekasi Jaya Regency A2 A112",
+        "Kelurahan" : "Tambun Utara",
+        "Kecamatan" : "Tambun Utara",
+        "Kabupaten" : "Bekasi",
+        "Provinsi" : "Jawa Barat",
+        "PostalCode" : "17510",
+        "StartPolisDate" : "2022-06-14",
+        "EndPolisDate" : "2025-06-14",
+        "Merk" : "TOYOTA",
+        "Type" : "ALL NEW KIJANG INNOVA 2.0 V AT",
+        "CarYear" : "2022",
+        "NoRangka" : "8097GGBJK",
+        "NoMesin" : "9780809JKHKJ",
+        "Colour" : "Putih",
+        "NoPolisi" : "",
+        "Kind" : "Passenger Vehicle",
+        "Fuel" : "Bensin",
+        "NIK" : "1457856236590002",
+        "NPWP" : "125423620254565"
+      } ]
+    }
+  }
+}]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <system-out><![CDATA[2022-06-15 11:31:12 - [TEST_SUITE][PASSED] - CPR-order: Test Cases/CPR/1. other-ins_order CPR]]></system-out>
+      <system-err><![CDATA[]]></system-err>
+   </testsuite>
+</testsuites>

@@ -1,0 +1,30 @@
+Suite/Test/Step Name,Browser,Description,Tag,Start time,End time,Duration,Status
+CFP-order,,,,2022-07-14 14:31:57,2022-07-14 14:32:04,7.331s,PASSED
+,,,,,,,
+Test Cases/CFP/1. other-ins_order CFP,,,,2022-07-14 14:31:58,2022-07-14 14:32:03,5.225s,PASSED
+"token = sendRequest(findTestObject(""CFP/credential CFP""))",,,,2022-07-14 14:31:58,2022-07-14 14:32:02,3.346s,PASSED
+slurper = new groovy.json.JsonSlurper(),,store json response to variable,,2022-07-14 14:32:02,2022-07-14 14:32:02,0.014s,PASSED
+get_token = slurper.parseText(token.getResponseBodyContent()),,,,2022-07-14 14:32:02,2022-07-14 14:32:02,0.033s,PASSED
+private_token = access_token,,define / field api,,2022-07-14 14:32:02,2022-07-14 14:32:02,0.017s,PASSED
+g_token = private_token,,store var to global variable,,2022-07-14 14:32:02,2022-07-14 14:32:02,0.103s,PASSED
+"println(""token is :"" + g_token)",,,,2022-07-14 14:32:02,2022-07-14 14:32:02,0.005s,PASSED
+response_token = token.getResponseText(),,show response to report in test suite,,2022-07-14 14:32:02,2022-07-14 14:32:02,0.002s,PASSED
+logInfo($response_token),,,,2022-07-14 14:32:02,2022-07-14 14:32:02,0.059s,PASSED
+"order = sendRequest(findTestObject(""CFP/OrderCFP"", [""token"":private_token, ""nokontrak"":nokontrak, ""custname"":custname, ""hpnumber"":hpnumber, ""nopol"":nopol, ""norangka"":norangka, ... ]))",,,,2022-07-14 14:32:02,2022-07-14 14:32:03,0.914s,PASSED
+get_order = order.getResponseText(),,show response to report in test suite,,2022-07-14 14:32:03,2022-07-14 14:32:03,0.000s,PASSED
+"verifyElementPropertyValue(order, ""StatusCode"", ""00"", CONTINUE_ON_FAILURE)",,,,2022-07-14 14:32:03,2022-07-14 14:32:03,0.079s,PASSED
+logInfo($get_order),,,,2022-07-14 14:32:03,2022-07-14 14:32:03,0.002s,PASSED
+,,,,,,,
+Test Cases/CFP/1. other-ins_order CFP,,,,2022-07-14 14:32:03,2022-07-14 14:32:04,1.327s,PASSED
+"token = sendRequest(findTestObject(""CFP/credential CFP""))",,,,2022-07-14 14:32:03,2022-07-14 14:32:04,0.537s,PASSED
+slurper = new groovy.json.JsonSlurper(),,store json response to variable,,2022-07-14 14:32:04,2022-07-14 14:32:04,0.001s,PASSED
+get_token = slurper.parseText(token.getResponseBodyContent()),,,,2022-07-14 14:32:04,2022-07-14 14:32:04,0.001s,PASSED
+private_token = access_token,,define / field api,,2022-07-14 14:32:04,2022-07-14 14:32:04,0.001s,PASSED
+g_token = private_token,,store var to global variable,,2022-07-14 14:32:04,2022-07-14 14:32:04,0.001s,PASSED
+"println(""token is :"" + g_token)",,,,2022-07-14 14:32:04,2022-07-14 14:32:04,0.001s,PASSED
+response_token = token.getResponseText(),,show response to report in test suite,,2022-07-14 14:32:04,2022-07-14 14:32:04,0.001s,PASSED
+logInfo($response_token),,,,2022-07-14 14:32:04,2022-07-14 14:32:04,0.000s,PASSED
+"order = sendRequest(findTestObject(""CFP/OrderCFP"", [""token"":private_token, ""nokontrak"":nokontrak, ""custname"":custname, ""hpnumber"":hpnumber, ""nopol"":nopol, ""norangka"":norangka, ... ]))",,,,2022-07-14 14:32:04,2022-07-14 14:32:04,0.716s,PASSED
+get_order = order.getResponseText(),,show response to report in test suite,,2022-07-14 14:32:04,2022-07-14 14:32:04,0.002s,PASSED
+"verifyElementPropertyValue(order, ""StatusCode"", ""00"", CONTINUE_ON_FAILURE)",,,,2022-07-14 14:32:04,2022-07-14 14:32:04,0.038s,PASSED
+logInfo($get_order),,,,2022-07-14 14:32:04,2022-07-14 14:32:04,0.001s,PASSED

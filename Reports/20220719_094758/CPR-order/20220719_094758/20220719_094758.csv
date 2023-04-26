@@ -1,0 +1,15 @@
+Suite/Test/Step Name,Browser,Description,Tag,Start time,End time,Duration,Status
+CPR-order,,,,2022-07-19 09:48:11,2022-07-19 09:48:19,7.437s,PASSED
+,,,,,,,
+Test Cases/CPR/1. other-ins_order CPR,,,,2022-07-19 09:48:12,2022-07-19 09:48:19,7.021s,PASSED
+"token = sendRequest(findTestObject(""CPR/get_credential_CPR""))",,,,2022-07-19 09:48:12,2022-07-19 09:48:16,3.577s,PASSED
+slurper = new groovy.json.JsonSlurper(),,store json response to variable,,2022-07-19 09:48:16,2022-07-19 09:48:16,0.025s,PASSED
+get_token = slurper.parseText(token.getResponseBodyContent()),,,,2022-07-19 09:48:16,2022-07-19 09:48:16,0.034s,PASSED
+private_token = access_token,,define / field api,,2022-07-19 09:48:16,2022-07-19 09:48:16,0.016s,PASSED
+g_token = private_token,,store var to global variable,,2022-07-19 09:48:16,2022-07-19 09:48:16,0.121s,PASSED
+"println(""token is :"" + g_token)",,,,2022-07-19 09:48:16,2022-07-19 09:48:16,0.006s,PASSED
+response_token = token.getResponseText(),,show response to report in test suite,,2022-07-19 09:48:16,2022-07-19 09:48:16,0.002s,PASSED
+logInfo($response_token),,,,2022-07-19 09:48:16,2022-07-19 09:48:16,0.071s,PASSED
+"order = sendRequest(findTestObject(""CPR/other-ins-order_CPR"", [""token"":private_token, ""id"":id, ""order_date"":order_date, ""source"":source]))",,,,2022-07-19 09:48:16,2022-07-19 09:48:19,2.523s,PASSED
+get_order = order.getResponseText(),,show response to report in test suite,,2022-07-19 09:48:19,2022-07-19 09:48:19,0.001s,PASSED
+logInfo($get_order),,,,2022-07-19 09:48:19,2022-07-19 09:48:19,0.002s,PASSED

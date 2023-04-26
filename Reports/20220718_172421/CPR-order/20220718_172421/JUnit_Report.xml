@@ -1,0 +1,306 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="CPR-order" time="9.544" tests="2" failures="0" errors="0">
+   <testsuite name="CPR-order" tests="2" failures="0" errors="0" time="9.544" skipped="0" timestamp="2022-07-18 17:24:37" hostname="User - DESKTOP-7I3I0GG" id="Test Suites/CPR-order">
+      <properties>
+         <property name="deviceName" value=""/>
+         <property name="devicePlatform" value=""/>
+         <property name="logFolder" value="C:\\Users\\User\\Katalon Studio\\other-ins\\Reports\\20220718_172421\\CPR-order\\20220718_172421"/>
+         <property name="logFiles" value="C:\\Users\\User\\Katalon Studio\\other-ins\\Reports\\20220718_172421\\CPR-order\\20220718_172421\\execution0.log"/>
+         <property name="attachments" value=""/>
+         <property name="hostName" value="User - DESKTOP-7I3I0GG"/>
+         <property name="hostAddress" value="192.168.250.2"/>
+         <property name="os" value="Windows 10 64bit"/>
+         <property name="katalonVersion" value="8.1.0.208"/>
+      </properties>
+      <testcase name="Test Cases/CPR/1. other-ins_order CPR" time="7.071" classname="Test Cases/CPR/1. other-ins_order CPR" status="PASSED">
+         <system-out><![CDATA[2022-07-18 17:24:38 - [TEST_CASE][PASSED] - Test Cases/CPR/1. other-ins_order CPR: Test Cases/CPR/1. other-ins_order CPR
+
+2022-07-18 17:24:38 - [TEST_STEP][PASSED] - token = sendRequest(findTestObject("CPR/get_credential_CPR")): Send request successfully
+
+2022-07-18 17:24:42 - [MESSAGE][INFO] - HAR: C:\Users\User\Katalon Studio\other-ins\Reports\20220718_172421\CPR-order\20220718_172421\requests\main\0.har
+
+2022-07-18 17:24:42 - [MESSAGE][PASSED] - Send request successfully
+
+2022-07-18 17:24:42 - [TEST_STEP][PASSED] - slurper = new groovy.json.JsonSlurper(): null
+
+2022-07-18 17:24:42 - [TEST_STEP][PASSED] - get_token = slurper.parseText(token.getResponseBodyContent()): null
+
+2022-07-18 17:24:42 - [TEST_STEP][PASSED] - private_token = access_token: null
+
+2022-07-18 17:24:42 - [TEST_STEP][PASSED] - g_token = private_token: null
+
+2022-07-18 17:24:42 - [TEST_STEP][PASSED] - println("token is :" + g_token): null
+
+2022-07-18 17:24:42 - [TEST_STEP][PASSED] - response_token = token.getResponseText(): null
+
+2022-07-18 17:24:42 - [TEST_STEP][PASSED] - logInfo($response_token): 
+            {
+                "token_type": "BearerToken",
+                "access_token": "Yp0zwEddzn2iYFcvRLkYiIvx2xoP",
+                "expires_in": "1799",
+                "scope": ""
+            }
+        
+
+2022-07-18 17:24:42 - [MESSAGE][INFO] - 
+            {
+                "token_type": "BearerToken",
+                "access_token": "Yp0zwEddzn2iYFcvRLkYiIvx2xoP",
+                "expires_in": "1799",
+                "scope": ""
+            }
+        
+
+2022-07-18 17:24:42 - [TEST_STEP][PASSED] - order = sendRequest(findTestObject("CPR/other-ins-order_CPR", ["token":private_token, "id":id, "order_date":order_date, "source":source])): Send request successfully
+
+2022-07-18 17:24:45 - [MESSAGE][INFO] - HAR: C:\Users\User\Katalon Studio\other-ins\Reports\20220718_172421\CPR-order\20220718_172421\requests\main\1.har
+
+2022-07-18 17:24:45 - [MESSAGE][PASSED] - Send request successfully
+
+2022-07-18 17:24:45 - [TEST_STEP][PASSED] - get_order = order.getResponseText(): null
+
+2022-07-18 17:24:45 - [TEST_STEP][PASSED] - logInfo($get_order): {
+  "OrderInsCarSmartWarrantyRs" : {
+    "ResponseHeader" : {
+      "StatusCode" : "00",
+      "StatusMessage" : "Success",
+      "CurrentPage" : "1",
+      "TotalPage" : "1",
+      "TotalData" : "2"
+    },
+    "ListData" : {
+      "DataKonsumen" : [ {
+        "NoKontrak" : "9490712654001",
+        "NamaKonsumen" : "EDDY GURERO",
+        "Address" : "JAKARTA BARAT 1",
+        "Kelurahan" : "JAKARTA BARAT 2",
+        "Kecamatan" : "JAKARTA BARAT 4",
+        "Kabupaten" : "JAKARTA BARAT 3",
+        "Provinsi" : "JAKARTA BARAT 5",
+        "PostalCode" : "21212",
+        "StartPolisDate" : "2022-07-08",
+        "EndPolisDate" : "2023-07-08",
+        "Merk" : "MAZDA",
+        "Type" : "2500 ABS 1.8",
+        "CarYear" : "2022",
+        "NoRangka" : "654654ADAD",
+        "NoMesin" : "654987ASD",
+        "Colour" : "HITAM",
+        "NoPolisi" : "123546789",
+        "Kind" : "Passenger Vehicle",
+        "Fuel" : "Bensin",
+        "NIK" : "555444666888777999112233",
+        "NPWP" : "225588336699114"
+      }, {
+        "NoKontrak" : "9490712657001",
+        "NamaKonsumen" : "JAKA DIRGANTARA",
+        "Address" : "CIPAYUNG 5",
+        "Kelurahan" : "CIPAYUNG 2",
+        "Kecamatan" : "CIPAYUNG 3",
+        "Kabupaten" : "CIPAYUNG 4",
+        "Provinsi" : "CIPAYUNG 6",
+        "PostalCode" : "54654",
+        "StartPolisDate" : "2022-07-08",
+        "EndPolisDate" : "2023-07-08",
+        "Merk" : "DAIHATSU",
+        "Type" : "ALL NEW SIRION 1.3 D DELUXE A/T",
+        "CarYear" : "2022",
+        "NoRangka" : "ASDASD55454",
+        "NoMesin" : "AS5D1AD21",
+        "Colour" : "SILVER",
+        "NoPolisi" : "231544987",
+        "Kind" : "Passenger Vehicle",
+        "Fuel" : "Bensin",
+        "NIK" : "213546879",
+        "NPWP" : "546879213"
+      } ]
+    }
+  }
+}
+
+2022-07-18 17:24:45 - [MESSAGE][INFO] - {
+  "OrderInsCarSmartWarrantyRs" : {
+    "ResponseHeader" : {
+      "StatusCode" : "00",
+      "StatusMessage" : "Success",
+      "CurrentPage" : "1",
+      "TotalPage" : "1",
+      "TotalData" : "2"
+    },
+    "ListData" : {
+      "DataKonsumen" : [ {
+        "NoKontrak" : "9490712654001",
+        "NamaKonsumen" : "EDDY GURERO",
+        "Address" : "JAKARTA BARAT 1",
+        "Kelurahan" : "JAKARTA BARAT 2",
+        "Kecamatan" : "JAKARTA BARAT 4",
+        "Kabupaten" : "JAKARTA BARAT 3",
+        "Provinsi" : "JAKARTA BARAT 5",
+        "PostalCode" : "21212",
+        "StartPolisDate" : "2022-07-08",
+        "EndPolisDate" : "2023-07-08",
+        "Merk" : "MAZDA",
+        "Type" : "2500 ABS 1.8",
+        "CarYear" : "2022",
+        "NoRangka" : "654654ADAD",
+        "NoMesin" : "654987ASD",
+        "Colour" : "HITAM",
+        "NoPolisi" : "123546789",
+        "Kind" : "Passenger Vehicle",
+        "Fuel" : "Bensin",
+        "NIK" : "555444666888777999112233",
+        "NPWP" : "225588336699114"
+      }, {
+        "NoKontrak" : "9490712657001",
+        "NamaKonsumen" : "JAKA DIRGANTARA",
+        "Address" : "CIPAYUNG 5",
+        "Kelurahan" : "CIPAYUNG 2",
+        "Kecamatan" : "CIPAYUNG 3",
+        "Kabupaten" : "CIPAYUNG 4",
+        "Provinsi" : "CIPAYUNG 6",
+        "PostalCode" : "54654",
+        "StartPolisDate" : "2022-07-08",
+        "EndPolisDate" : "2023-07-08",
+        "Merk" : "DAIHATSU",
+        "Type" : "ALL NEW SIRION 1.3 D DELUXE A/T",
+        "CarYear" : "2022",
+        "NoRangka" : "ASDASD55454",
+        "NoMesin" : "AS5D1AD21",
+        "Colour" : "SILVER",
+        "NoPolisi" : "231544987",
+        "Kind" : "Passenger Vehicle",
+        "Fuel" : "Bensin",
+        "NIK" : "213546879",
+        "NPWP" : "546879213"
+      } ]
+    }
+  }
+}]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/CPR/1. other-ins_order CPR" time="0.693" classname="Test Cases/CPR/1. other-ins_order CPR" status="PASSED">
+         <system-out><![CDATA[2022-07-18 17:24:45 - [TEST_CASE][PASSED] - Test Cases/CPR/1. other-ins_order CPR: Test Cases/CPR/1. other-ins_order CPR
+
+2022-07-18 17:24:45 - [TEST_STEP][PASSED] - token = sendRequest(findTestObject("CPR/get_credential_CPR")): Send request successfully
+
+2022-07-18 17:24:45 - [MESSAGE][INFO] - HAR: C:\Users\User\Katalon Studio\other-ins\Reports\20220718_172421\CPR-order\20220718_172421\requests\main\2.har
+
+2022-07-18 17:24:45 - [MESSAGE][PASSED] - Send request successfully
+
+2022-07-18 17:24:45 - [TEST_STEP][PASSED] - slurper = new groovy.json.JsonSlurper(): null
+
+2022-07-18 17:24:45 - [TEST_STEP][PASSED] - get_token = slurper.parseText(token.getResponseBodyContent()): null
+
+2022-07-18 17:24:45 - [TEST_STEP][PASSED] - private_token = access_token: null
+
+2022-07-18 17:24:45 - [TEST_STEP][PASSED] - g_token = private_token: null
+
+2022-07-18 17:24:45 - [TEST_STEP][PASSED] - println("token is :" + g_token): null
+
+2022-07-18 17:24:45 - [TEST_STEP][PASSED] - response_token = token.getResponseText(): null
+
+2022-07-18 17:24:45 - [TEST_STEP][PASSED] - logInfo($response_token): 
+            {
+                "token_type": "BearerToken",
+                "access_token": "gAriSOIXb8ALilJ3UeVz1X0yTcvI",
+                "expires_in": "1799",
+                "scope": ""
+            }
+        
+
+2022-07-18 17:24:45 - [MESSAGE][INFO] - 
+            {
+                "token_type": "BearerToken",
+                "access_token": "gAriSOIXb8ALilJ3UeVz1X0yTcvI",
+                "expires_in": "1799",
+                "scope": ""
+            }
+        
+
+2022-07-18 17:24:45 - [TEST_STEP][PASSED] - order = sendRequest(findTestObject("CPR/other-ins-order_CPR", ["token":private_token, "id":id, "order_date":order_date, "source":source])): Send request successfully
+
+2022-07-18 17:24:46 - [MESSAGE][INFO] - HAR: C:\Users\User\Katalon Studio\other-ins\Reports\20220718_172421\CPR-order\20220718_172421\requests\main\3.har
+
+2022-07-18 17:24:46 - [MESSAGE][PASSED] - Send request successfully
+
+2022-07-18 17:24:46 - [TEST_STEP][PASSED] - get_order = order.getResponseText(): null
+
+2022-07-18 17:24:46 - [TEST_STEP][PASSED] - logInfo($get_order): {
+  "OrderInsCarSmartWarrantyRs" : {
+    "ResponseHeader" : {
+      "StatusCode" : "02",
+      "StatusMessage" : "Data Pernah di Order",
+      "CurrentPage" : "",
+      "TotalPage" : "",
+      "TotalData" : ""
+    },
+    "ListData" : {
+      "DataKonsumen" : [ {
+        "NoKontrak" : "",
+        "NamaKonsumen" : "",
+        "Address" : "",
+        "Kelurahan" : "",
+        "Kecamatan" : "",
+        "Kabupaten" : "",
+        "Provinsi" : "",
+        "PostalCode" : "",
+        "StartPolisDate" : "",
+        "EndPolisDate" : "",
+        "Merk" : "",
+        "Type" : "",
+        "CarYear" : "",
+        "NoRangka" : "",
+        "NoMesin" : "",
+        "Colour" : "",
+        "NoPolisi" : "",
+        "Kind" : "",
+        "Fuel" : "",
+        "NIK" : "",
+        "NPWP" : ""
+      } ]
+    }
+  }
+}
+
+2022-07-18 17:24:46 - [MESSAGE][INFO] - {
+  "OrderInsCarSmartWarrantyRs" : {
+    "ResponseHeader" : {
+      "StatusCode" : "02",
+      "StatusMessage" : "Data Pernah di Order",
+      "CurrentPage" : "",
+      "TotalPage" : "",
+      "TotalData" : ""
+    },
+    "ListData" : {
+      "DataKonsumen" : [ {
+        "NoKontrak" : "",
+        "NamaKonsumen" : "",
+        "Address" : "",
+        "Kelurahan" : "",
+        "Kecamatan" : "",
+        "Kabupaten" : "",
+        "Provinsi" : "",
+        "PostalCode" : "",
+        "StartPolisDate" : "",
+        "EndPolisDate" : "",
+        "Merk" : "",
+        "Type" : "",
+        "CarYear" : "",
+        "NoRangka" : "",
+        "NoMesin" : "",
+        "Colour" : "",
+        "NoPolisi" : "",
+        "Kind" : "",
+        "Fuel" : "",
+        "NIK" : "",
+        "NPWP" : ""
+      } ]
+    }
+  }
+}]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <system-out><![CDATA[2022-07-18 17:24:37 - [TEST_SUITE][PASSED] - CPR-order: Test Cases/CPR/1. other-ins_order CPR]]></system-out>
+      <system-err><![CDATA[]]></system-err>
+   </testsuite>
+</testsuites>
